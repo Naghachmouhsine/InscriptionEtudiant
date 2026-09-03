@@ -7,6 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\auth.css" />
+    <Content Remove="wwwroot\js\auth.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\auth.css" />
+    <None Include="wwwroot\js\auth.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -16,6 +26,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Candidat\Inscription\" />
+    <Folder Include="Views\Home\" />
   </ItemGroup>
 
 </Project>

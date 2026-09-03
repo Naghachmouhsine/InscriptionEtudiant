@@ -1,0 +1,5561 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "AdminController.cs",
+      "file_type": "code",
+      "source_file": "Controllers/Admin/AdminController.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "controllers_admin_admincontroller",
+      "community": 6,
+      "norm_label": "admincontroller.cs"
+    },
+    {
+      "label": "InscriptionEtudiant.Controllers.Admin",
+      "file_type": "code",
+      "source_file": "Controllers/Admin/AdminController.cs",
+      "source_location": "L3",
+      "type": "namespace",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "InscriptionEtudiant.Controllers.Admin"
+      },
+      "_origin": "ast",
+      "id": "csharp_namespace:646b4130d620592e",
+      "community": 6,
+      "norm_label": "inscriptionetudiant.controllers.admin"
+    },
+    {
+      "label": "AdminController",
+      "file_type": "code",
+      "source_file": "Controllers/Admin/AdminController.cs",
+      "source_location": "L9",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers.Admin",
+        "scope_chain": [
+          "s35"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_admin_admincontroller_inscriptionetudiant_controllers_admin_admincontroller",
+      "community": 6,
+      "norm_label": "admincontroller"
+    },
+    {
+      "label": "Controller",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controller",
+      "community": 6,
+      "norm_label": "controller"
+    },
+    {
+      "label": ".Index()",
+      "file_type": "code",
+      "source_file": "Controllers/Admin/AdminController.cs",
+      "source_location": "L11",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers.Admin",
+        "scope_chain": [
+          "s35"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_admin_admincontroller_inscriptionetudiant_controllers_admin_admincontroller_index",
+      "community": 6,
+      "norm_label": ".index()"
+    },
+    {
+      "label": "IActionResult",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_admin_admincontroller_cs_iactionresult",
+      "community": 6,
+      "norm_label": "iactionresult"
+    },
+    {
+      "label": "FiliereController.cs",
+      "file_type": "code",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "controllers_admin_filierecontroller",
+      "community": 3,
+      "norm_label": "filierecontroller.cs"
+    },
+    {
+      "label": "FiliereController",
+      "file_type": "code",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L10",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers.Admin",
+        "scope_chain": [
+          "s203"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller",
+      "community": 2,
+      "norm_label": "filierecontroller"
+    },
+    {
+      "label": ".Index()",
+      "file_type": "code",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L20",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers.Admin",
+        "scope_chain": [
+          "s203"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_index",
+      "community": 2,
+      "norm_label": ".index()"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_admin_filierecontroller_cs_task",
+      "community": 2,
+      "norm_label": "task"
+    },
+    {
+      "label": "IActionResult",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_admin_filierecontroller_cs_iactionresult",
+      "community": 2,
+      "norm_label": "iactionresult"
+    },
+    {
+      "label": ".Create()",
+      "file_type": "code",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L28",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers.Admin",
+        "scope_chain": [
+          "s203"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_create",
+      "community": 2,
+      "norm_label": ".create()"
+    },
+    {
+      "label": "HttpGet",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_admin_filierecontroller_cs_httpget",
+      "community": 2,
+      "norm_label": "httpget"
+    },
+    {
+      "label": "HttpPost",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_admin_filierecontroller_cs_httppost",
+      "community": 2,
+      "norm_label": "httppost"
+    },
+    {
+      "label": "ValidateAntiForgeryToken",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_admin_filierecontroller_cs_validateantiforgerytoken",
+      "community": 2,
+      "norm_label": "validateantiforgerytoken"
+    },
+    {
+      "label": ".Edit()",
+      "file_type": "code",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L71",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers.Admin",
+        "scope_chain": [
+          "s203"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_edit",
+      "community": 2,
+      "norm_label": ".edit()"
+    },
+    {
+      "label": ".Delete()",
+      "file_type": "code",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L125",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers.Admin",
+        "scope_chain": [
+          "s203"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_delete",
+      "community": 2,
+      "norm_label": ".delete()"
+    },
+    {
+      "label": "AuthController.cs",
+      "file_type": "code",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "controllers_authcontroller",
+      "community": 3,
+      "norm_label": "authcontroller.cs"
+    },
+    {
+      "label": "InscriptionEtudiant.Controllers",
+      "file_type": "code",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L9",
+      "type": "namespace",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "InscriptionEtudiant.Controllers"
+      },
+      "_origin": "ast",
+      "id": "csharp_namespace:fc211e59efed416e",
+      "community": 3,
+      "norm_label": "inscriptionetudiant.controllers"
+    },
+    {
+      "label": "AuthController",
+      "file_type": "code",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L11",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers",
+        "scope_chain": [
+          "s276"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller",
+      "community": 5,
+      "norm_label": "authcontroller"
+    },
+    {
+      "label": ".Register()",
+      "file_type": "code",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L25",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers",
+        "scope_chain": [
+          "s276"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_register",
+      "community": 5,
+      "norm_label": ".register()"
+    },
+    {
+      "label": "IActionResult",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_authcontroller_cs_iactionresult",
+      "community": 5,
+      "norm_label": "iactionresult"
+    },
+    {
+      "label": "HttpGet",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_authcontroller_cs_httpget",
+      "community": 5,
+      "norm_label": "httpget"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_authcontroller_cs_task",
+      "community": 5,
+      "norm_label": "task"
+    },
+    {
+      "label": "HttpPost",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_authcontroller_cs_httppost",
+      "community": 5,
+      "norm_label": "httppost"
+    },
+    {
+      "label": "ValidateAntiForgeryToken",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_authcontroller_cs_validateantiforgerytoken",
+      "community": 5,
+      "norm_label": "validateantiforgerytoken"
+    },
+    {
+      "label": ".Login()",
+      "file_type": "code",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L73",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers",
+        "scope_chain": [
+          "s276"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_login",
+      "community": 5,
+      "norm_label": ".login()"
+    },
+    {
+      "label": ".Logout()",
+      "file_type": "code",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L160",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers",
+        "scope_chain": [
+          "s276"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_logout",
+      "community": 5,
+      "norm_label": ".logout()"
+    },
+    {
+      "label": ".CreateAuthenticationCookie()",
+      "file_type": "code",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L179",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers",
+        "scope_chain": [
+          "s276"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_createauthenticationcookie",
+      "community": 5,
+      "norm_label": ".createauthenticationcookie()"
+    },
+    {
+      "label": "CandidatController.cs",
+      "file_type": "code",
+      "source_file": "Controllers/CandidatController.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "controllers_candidatcontroller",
+      "community": 3,
+      "norm_label": "candidatcontroller.cs"
+    },
+    {
+      "label": "CandidatController",
+      "file_type": "code",
+      "source_file": "Controllers/CandidatController.cs",
+      "source_location": "L9",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers",
+        "scope_chain": [
+          "s35"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_candidatcontroller_inscriptionetudiant_controllers_candidatcontroller",
+      "community": 6,
+      "norm_label": "candidatcontroller"
+    },
+    {
+      "label": ".Index()",
+      "file_type": "code",
+      "source_file": "Controllers/CandidatController.cs",
+      "source_location": "L11",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Controllers",
+        "scope_chain": [
+          "s35"
+        ]
+      },
+      "_origin": "ast",
+      "id": "controllers_candidatcontroller_inscriptionetudiant_controllers_candidatcontroller_index",
+      "community": 6,
+      "norm_label": ".index()"
+    },
+    {
+      "label": "IActionResult",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "controllers_candidatcontroller_cs_iactionresult",
+      "community": 6,
+      "norm_label": "iactionresult"
+    },
+    {
+      "label": "InscriptionEtudiant",
+      "file_type": "code",
+      "source_file": "InscriptionEtudiant.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "inscriptionetudiant_csproj_inscriptionetudiant",
+      "community": 9,
+      "norm_label": "inscriptionetudiant"
+    },
+    {
+      "label": "net10.0",
+      "file_type": "concept",
+      "source_file": "InscriptionEtudiant.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "framework_net10_0",
+      "community": 9,
+      "norm_label": "net10.0"
+    },
+    {
+      "label": "Microsoft.EntityFrameworkCore.Design (10.0.10)",
+      "file_type": "code",
+      "source_file": "InscriptionEtudiant.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "nuget_microsoft_entityframeworkcore_design",
+      "community": 9,
+      "norm_label": "microsoft.entityframeworkcore.design (10.0.10)"
+    },
+    {
+      "label": "Microsoft.EntityFrameworkCore.SqlServer (10.0.10)",
+      "file_type": "code",
+      "source_file": "InscriptionEtudiant.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "nuget_microsoft_entityframeworkcore_sqlserver",
+      "community": 9,
+      "norm_label": "microsoft.entityframeworkcore.sqlserver (10.0.10)"
+    },
+    {
+      "label": "Microsoft.EntityFrameworkCore.Tools (10.0.10)",
+      "file_type": "code",
+      "source_file": "InscriptionEtudiant.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "nuget_microsoft_entityframeworkcore_tools",
+      "community": 9,
+      "norm_label": "microsoft.entityframeworkcore.tools (10.0.10)"
+    },
+    {
+      "label": "Microsoft.NET.Sdk.Web",
+      "file_type": "concept",
+      "source_file": "InscriptionEtudiant.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "sdk_microsoft_net_sdk_web",
+      "community": 9,
+      "norm_label": "microsoft.net.sdk.web"
+    },
+    {
+      "label": "InscriptionEtudiant.slnx",
+      "file_type": "code",
+      "source_file": "InscriptionEtudiant.slnx",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "inscriptionetudiant_slnx_inscriptionetudiant",
+      "community": 15,
+      "norm_label": "inscriptionetudiant.slnx"
+    },
+    {
+      "label": "20260730143534_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "source_file": "Migrations/20260730143534_InitialCreate.Designer.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "migrations_20260730143534_initialcreate_designer",
+      "community": 0,
+      "norm_label": "20260730143534_initialcreate.designer.cs"
+    },
+    {
+      "label": "InscriptionEtudiant.Migrations",
+      "file_type": "code",
+      "source_file": "Migrations/20260730143534_InitialCreate.Designer.cs",
+      "source_location": "L11",
+      "type": "namespace",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "InscriptionEtudiant.Migrations"
+      },
+      "_origin": "ast",
+      "id": "csharp_namespace:51d43ece672ba51b",
+      "community": 0,
+      "norm_label": "inscriptionetudiant.migrations"
+    },
+    {
+      "label": "InitialCreate",
+      "file_type": "code",
+      "source_file": "Migrations/20260730143534_InitialCreate.Designer.cs",
+      "source_location": "L13",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Migrations",
+        "scope_chain": [
+          "s331"
+        ]
+      },
+      "_origin": "ast",
+      "id": "migrations_20260730143534_initialcreate_designer_inscriptionetudiant_migrations_initialcreate",
+      "community": 0,
+      "norm_label": "initialcreate"
+    },
+    {
+      "label": ".BuildTargetModel()",
+      "file_type": "code",
+      "source_file": "Migrations/20260730143534_InitialCreate.Designer.cs",
+      "source_location": "L18",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Migrations",
+        "scope_chain": [
+          "s331"
+        ]
+      },
+      "_origin": "ast",
+      "id": "migrations_20260730143534_initialcreate_designer_inscriptionetudiant_migrations_initialcreate_buildtargetmodel",
+      "community": 0,
+      "norm_label": ".buildtargetmodel()"
+    },
+    {
+      "label": "ModelBuilder",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "migrations_20260730143534_initialcreate_designer_cs_modelbuilder",
+      "community": 0,
+      "norm_label": "modelbuilder"
+    },
+    {
+      "label": "20260730143534_InitialCreate.cs",
+      "file_type": "code",
+      "source_file": "Migrations/20260730143534_InitialCreate.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "migrations_20260730143534_initialcreate",
+      "community": 0,
+      "norm_label": "20260730143534_initialcreate.cs"
+    },
+    {
+      "label": "InitialCreate",
+      "file_type": "code",
+      "source_file": "Migrations/20260730143534_InitialCreate.cs",
+      "source_location": "L8",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Migrations",
+        "scope_chain": [
+          "s75"
+        ]
+      },
+      "_origin": "ast",
+      "id": "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate",
+      "community": 0,
+      "norm_label": "initialcreate"
+    },
+    {
+      "label": "Migration",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "migration",
+      "community": 0,
+      "norm_label": "migration"
+    },
+    {
+      "label": ".Up()",
+      "file_type": "code",
+      "source_file": "Migrations/20260730143534_InitialCreate.cs",
+      "source_location": "L11",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Migrations",
+        "scope_chain": [
+          "s75"
+        ]
+      },
+      "_origin": "ast",
+      "id": "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate_up",
+      "community": 0,
+      "norm_label": ".up()"
+    },
+    {
+      "label": "MigrationBuilder",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "migrations_20260730143534_initialcreate_cs_migrationbuilder",
+      "community": 0,
+      "norm_label": "migrationbuilder"
+    },
+    {
+      "label": ".Down()",
+      "file_type": "code",
+      "source_file": "Migrations/20260730143534_InitialCreate.cs",
+      "source_location": "L67",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Migrations",
+        "scope_chain": [
+          "s75"
+        ]
+      },
+      "_origin": "ast",
+      "id": "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate_down",
+      "community": 0,
+      "norm_label": ".down()"
+    },
+    {
+      "label": "20260730203152_FilierMigration.Designer.cs",
+      "file_type": "code",
+      "source_file": "Migrations/20260730203152_FilierMigration.Designer.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "migrations_20260730203152_filiermigration_designer",
+      "community": 0,
+      "norm_label": "20260730203152_filiermigration.designer.cs"
+    },
+    {
+      "label": "FilierMigration",
+      "file_type": "code",
+      "source_file": "Migrations/20260730203152_FilierMigration.Designer.cs",
+      "source_location": "L14",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Migrations",
+        "scope_chain": [
+          "s346"
+        ]
+      },
+      "_origin": "ast",
+      "id": "migrations_20260730203152_filiermigration_designer_inscriptionetudiant_migrations_filiermigration",
+      "community": 0,
+      "norm_label": "filiermigration"
+    },
+    {
+      "label": ".BuildTargetModel()",
+      "file_type": "code",
+      "source_file": "Migrations/20260730203152_FilierMigration.Designer.cs",
+      "source_location": "L19",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Migrations",
+        "scope_chain": [
+          "s346"
+        ]
+      },
+      "_origin": "ast",
+      "id": "migrations_20260730203152_filiermigration_designer_inscriptionetudiant_migrations_filiermigration_buildtargetmodel",
+      "community": 0,
+      "norm_label": ".buildtargetmodel()"
+    },
+    {
+      "label": "ModelBuilder",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "migrations_20260730203152_filiermigration_designer_cs_modelbuilder",
+      "community": 0,
+      "norm_label": "modelbuilder"
+    },
+    {
+      "label": "20260730203152_FilierMigration.cs",
+      "file_type": "code",
+      "source_file": "Migrations/20260730203152_FilierMigration.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "migrations_20260730203152_filiermigration",
+      "community": 0,
+      "norm_label": "20260730203152_filiermigration.cs"
+    },
+    {
+      "label": "FilierMigration",
+      "file_type": "code",
+      "source_file": "Migrations/20260730203152_FilierMigration.cs",
+      "source_location": "L9",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Migrations",
+        "scope_chain": [
+          "s90"
+        ]
+      },
+      "_origin": "ast",
+      "id": "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration",
+      "community": 0,
+      "norm_label": "filiermigration"
+    },
+    {
+      "label": ".Up()",
+      "file_type": "code",
+      "source_file": "Migrations/20260730203152_FilierMigration.cs",
+      "source_location": "L12",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Migrations",
+        "scope_chain": [
+          "s90"
+        ]
+      },
+      "_origin": "ast",
+      "id": "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration_up",
+      "community": 0,
+      "norm_label": ".up()"
+    },
+    {
+      "label": "MigrationBuilder",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "migrations_20260730203152_filiermigration_cs_migrationbuilder",
+      "community": 0,
+      "norm_label": "migrationbuilder"
+    },
+    {
+      "label": ".Down()",
+      "file_type": "code",
+      "source_file": "Migrations/20260730203152_FilierMigration.cs",
+      "source_location": "L33",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Migrations",
+        "scope_chain": [
+          "s90"
+        ]
+      },
+      "_origin": "ast",
+      "id": "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration_down",
+      "community": 0,
+      "norm_label": ".down()"
+    },
+    {
+      "label": "ApplicationDbContextModelSnapshot.cs",
+      "file_type": "code",
+      "source_file": "Migrations/ApplicationDbContextModelSnapshot.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "migrations_applicationdbcontextmodelsnapshot",
+      "community": 0,
+      "norm_label": "applicationdbcontextmodelsnapshot.cs"
+    },
+    {
+      "label": "ApplicationDbContextModelSnapshot",
+      "file_type": "code",
+      "source_file": "Migrations/ApplicationDbContextModelSnapshot.cs",
+      "source_location": "L13",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Migrations",
+        "scope_chain": [
+          "s297"
+        ]
+      },
+      "_origin": "ast",
+      "id": "migrations_applicationdbcontextmodelsnapshot_inscriptionetudiant_migrations_applicationdbcontextmodelsnapshot",
+      "community": 0,
+      "norm_label": "applicationdbcontextmodelsnapshot"
+    },
+    {
+      "label": "ModelSnapshot",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "modelsnapshot",
+      "community": 0,
+      "norm_label": "modelsnapshot"
+    },
+    {
+      "label": ".BuildModel()",
+      "file_type": "code",
+      "source_file": "Migrations/ApplicationDbContextModelSnapshot.cs",
+      "source_location": "L16",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Migrations",
+        "scope_chain": [
+          "s297"
+        ]
+      },
+      "_origin": "ast",
+      "id": "migrations_applicationdbcontextmodelsnapshot_inscriptionetudiant_migrations_applicationdbcontextmodelsnapshot_buildmodel",
+      "community": 0,
+      "norm_label": ".buildmodel()"
+    },
+    {
+      "label": "ModelBuilder",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "migrations_applicationdbcontextmodelsnapshot_cs_modelbuilder",
+      "community": 0,
+      "norm_label": "modelbuilder"
+    },
+    {
+      "label": "Administrateur.cs",
+      "file_type": "code",
+      "source_file": "Models/Administrateur.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "models_administrateur",
+      "community": 1,
+      "norm_label": "administrateur.cs"
+    },
+    {
+      "label": "InscriptionEtudiant.Models",
+      "file_type": "code",
+      "source_file": "Models/Administrateur.cs",
+      "source_location": "L3",
+      "type": "namespace",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "InscriptionEtudiant.Models"
+      },
+      "_origin": "ast",
+      "id": "csharp_namespace:9a3df721a12ee86a",
+      "community": 3,
+      "norm_label": "inscriptionetudiant.models"
+    },
+    {
+      "label": "Administrateur",
+      "file_type": "code",
+      "source_file": "Models/Administrateur.cs",
+      "source_location": "L5",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Models",
+        "scope_chain": [
+          "s51"
+        ]
+      },
+      "_origin": "ast",
+      "id": "models_administrateur_inscriptionetudiant_models_administrateur",
+      "community": 1,
+      "norm_label": "administrateur"
+    },
+    {
+      "label": "Candidat.cs",
+      "file_type": "code",
+      "source_file": "Models/Candidat.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "models_candidat",
+      "community": 1,
+      "norm_label": "candidat.cs"
+    },
+    {
+      "label": "Candidat",
+      "file_type": "code",
+      "source_file": "Models/Candidat.cs",
+      "source_location": "L5",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Models",
+        "scope_chain": [
+          "s51"
+        ]
+      },
+      "_origin": "ast",
+      "id": "models_candidat_inscriptionetudiant_models_candidat",
+      "community": 1,
+      "norm_label": "candidat"
+    },
+    {
+      "label": "ErrorViewModel.cs",
+      "file_type": "code",
+      "source_file": "Models/ErrorViewModel.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "models_errorviewmodel",
+      "community": 3,
+      "norm_label": "errorviewmodel.cs"
+    },
+    {
+      "label": "ErrorViewModel",
+      "file_type": "code",
+      "source_file": "Models/ErrorViewModel.cs",
+      "source_location": "L3",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "_origin": "ast",
+      "id": "models_errorviewmodel_inscriptionetudiant_models_errorviewmodel",
+      "community": 3,
+      "norm_label": "errorviewmodel"
+    },
+    {
+      "label": "Filiere.cs",
+      "file_type": "code",
+      "source_file": "Models/Filiere.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "models_filiere",
+      "community": 0,
+      "norm_label": "filiere.cs"
+    },
+    {
+      "label": "Filiere",
+      "file_type": "code",
+      "source_file": "Models/Filiere.cs",
+      "source_location": "L9",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Models",
+        "scope_chain": [
+          "s63"
+        ]
+      },
+      "_origin": "ast",
+      "id": "models_filiere_inscriptionetudiant_models_filiere",
+      "community": 2,
+      "norm_label": "filiere"
+    },
+    {
+      "label": "DateTime",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "models_filiere_cs_datetime",
+      "community": 2,
+      "norm_label": "datetime"
+    },
+    {
+      "label": "Program.cs",
+      "file_type": "code",
+      "source_file": "Program.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "program",
+      "community": 3,
+      "norm_label": "program.cs"
+    },
+    {
+      "label": "launchSettings.json",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "properties_launchsettings",
+      "community": 4,
+      "norm_label": "launchsettings.json"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "properties_launchsettings_schema",
+      "community": 4,
+      "norm_label": "$schema"
+    },
+    {
+      "label": "profiles",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "properties_launchsettings_profiles",
+      "community": 4,
+      "norm_label": "profiles"
+    },
+    {
+      "label": "http",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "properties_launchsettings_profiles_http",
+      "community": 4,
+      "norm_label": "http"
+    },
+    {
+      "label": "commandName",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "properties_launchsettings_http_commandname",
+      "community": 4,
+      "norm_label": "commandname"
+    },
+    {
+      "label": "dotnetRunMessages",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "properties_launchsettings_http_dotnetrunmessages",
+      "community": 4,
+      "norm_label": "dotnetrunmessages"
+    },
+    {
+      "label": "launchBrowser",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "properties_launchsettings_http_launchbrowser",
+      "community": 4,
+      "norm_label": "launchbrowser"
+    },
+    {
+      "label": "applicationUrl",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "properties_launchsettings_http_applicationurl",
+      "community": 4,
+      "norm_label": "applicationurl"
+    },
+    {
+      "label": "environmentVariables",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "properties_launchsettings_http_environmentvariables",
+      "community": 4,
+      "norm_label": "environmentvariables"
+    },
+    {
+      "label": "ASPNETCORE_ENVIRONMENT",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "properties_launchsettings_environmentvariables_aspnetcore_environment",
+      "community": 4,
+      "norm_label": "aspnetcore_environment"
+    },
+    {
+      "label": "https",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "properties_launchsettings_profiles_https",
+      "community": 4,
+      "norm_label": "https"
+    },
+    {
+      "label": "commandName",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "properties_launchsettings_https_commandname",
+      "community": 4,
+      "norm_label": "commandname"
+    },
+    {
+      "label": "dotnetRunMessages",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "properties_launchsettings_https_dotnetrunmessages",
+      "community": 4,
+      "norm_label": "dotnetrunmessages"
+    },
+    {
+      "label": "launchBrowser",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "properties_launchsettings_https_launchbrowser",
+      "community": 4,
+      "norm_label": "launchbrowser"
+    },
+    {
+      "label": "applicationUrl",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "properties_launchsettings_https_applicationurl",
+      "community": 4,
+      "norm_label": "applicationurl"
+    },
+    {
+      "label": "environmentVariables",
+      "file_type": "code",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "properties_launchsettings_https_environmentvariables",
+      "community": 4,
+      "norm_label": "environmentvariables"
+    },
+    {
+      "label": "AuthService.cs",
+      "file_type": "code",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_authservice",
+      "community": 3,
+      "norm_label": "authservice.cs"
+    },
+    {
+      "label": "InscriptionEtudiant.Services",
+      "file_type": "code",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L8",
+      "type": "namespace",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "InscriptionEtudiant.Services"
+      },
+      "_origin": "ast",
+      "id": "csharp_namespace:d53ed6b6d48bbb5b",
+      "community": 3,
+      "norm_label": "inscriptionetudiant.services"
+    },
+    {
+      "label": "AuthService",
+      "file_type": "code",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L10",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s207"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_authservice_inscriptionetudiant_services_authservice",
+      "community": 1,
+      "norm_label": "authservice"
+    },
+    {
+      "label": ".RegisterCandidat()",
+      "file_type": "code",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L19",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s207"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_authservice_inscriptionetudiant_services_authservice_registercandidat",
+      "community": 1,
+      "norm_label": ".registercandidat()"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_authservice_cs_task",
+      "community": 1,
+      "norm_label": "task"
+    },
+    {
+      "label": ".LoginCandidat()",
+      "file_type": "code",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L43",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s207"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_authservice_inscriptionetudiant_services_authservice_logincandidat",
+      "community": 1,
+      "norm_label": ".logincandidat()"
+    },
+    {
+      "label": ".LoginAdmin()",
+      "file_type": "code",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L55",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s207"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_authservice_inscriptionetudiant_services_authservice_loginadmin",
+      "community": 1,
+      "norm_label": ".loginadmin()"
+    },
+    {
+      "label": ".HashPassword()",
+      "file_type": "code",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L68",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s207"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_authservice_inscriptionetudiant_services_authservice_hashpassword",
+      "community": 1,
+      "norm_label": ".hashpassword()"
+    },
+    {
+      "label": ".VerifyPassword()",
+      "file_type": "code",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L90",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s207"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_authservice_inscriptionetudiant_services_authservice_verifypassword",
+      "community": 1,
+      "norm_label": ".verifypassword()"
+    },
+    {
+      "label": "AuthServiceInt.cs",
+      "file_type": "code",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_authserviceint",
+      "community": 1,
+      "norm_label": "authserviceint.cs"
+    },
+    {
+      "label": "AuthServiceInt",
+      "file_type": "code",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L6",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s79"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_authserviceint_inscriptionetudiant_services_authserviceint",
+      "community": 1,
+      "norm_label": "authserviceint"
+    },
+    {
+      "label": ".RegisterCandidat()",
+      "file_type": "code",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L8",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s79"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_authserviceint_inscriptionetudiant_services_authserviceint_registercandidat",
+      "community": 1,
+      "norm_label": ".registercandidat()"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_authserviceint_cs_task",
+      "community": 1,
+      "norm_label": "task"
+    },
+    {
+      "label": ".LoginCandidat()",
+      "file_type": "code",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L10",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s79"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_authserviceint_inscriptionetudiant_services_authserviceint_logincandidat",
+      "community": 1,
+      "norm_label": ".logincandidat()"
+    },
+    {
+      "label": ".LoginAdmin()",
+      "file_type": "code",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L12",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s79"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_authserviceint_inscriptionetudiant_services_authserviceint_loginadmin",
+      "community": 1,
+      "norm_label": ".loginadmin()"
+    },
+    {
+      "label": "FiliereService.cs",
+      "file_type": "code",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_filiereservice",
+      "community": 3,
+      "norm_label": "filiereservice.cs"
+    },
+    {
+      "label": "FiliereService",
+      "file_type": "code",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L14",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s242"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_filiereservice_inscriptionetudiant_services_filiereservice",
+      "community": 7,
+      "norm_label": "filiereservice"
+    },
+    {
+      "label": ".CreateAsync()",
+      "file_type": "code",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L23",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s242"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_filiereservice_inscriptionetudiant_services_filiereservice_createasync",
+      "community": 7,
+      "norm_label": ".createasync()"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_filiereservice_cs_task",
+      "community": 7,
+      "norm_label": "task"
+    },
+    {
+      "label": ".DeleteAsync()",
+      "file_type": "code",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L30",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s242"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_filiereservice_inscriptionetudiant_services_filiereservice_deleteasync",
+      "community": 7,
+      "norm_label": ".deleteasync()"
+    },
+    {
+      "label": ".GetAllAsync()",
+      "file_type": "code",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L38",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s242"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_filiereservice_inscriptionetudiant_services_filiereservice_getallasync",
+      "community": 7,
+      "norm_label": ".getallasync()"
+    },
+    {
+      "label": "IEnumerable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_filiereservice_cs_ienumerable",
+      "community": 7,
+      "norm_label": "ienumerable"
+    },
+    {
+      "label": ".GetByIdAsync()",
+      "file_type": "code",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L49",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s242"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_filiereservice_inscriptionetudiant_services_filiereservice_getbyidasync",
+      "community": 7,
+      "norm_label": ".getbyidasync()"
+    },
+    {
+      "label": ".UpdateAsync()",
+      "file_type": "code",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L54",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s242"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_filiereservice_inscriptionetudiant_services_filiereservice_updateasync",
+      "community": 7,
+      "norm_label": ".updateasync()"
+    },
+    {
+      "label": ".ExistsAsync()",
+      "file_type": "code",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L60",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services",
+        "scope_chain": [
+          "s242"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_filiereservice_inscriptionetudiant_services_filiereservice_existsasync",
+      "community": 7,
+      "norm_label": ".existsasync()"
+    },
+    {
+      "label": "IFiliereService.cs",
+      "file_type": "code",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_interfaces_ifiliereservice",
+      "community": 3,
+      "norm_label": "ifiliereservice.cs"
+    },
+    {
+      "label": "InscriptionEtudiant.Services.Interfaces",
+      "file_type": "code",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L5",
+      "type": "namespace",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "InscriptionEtudiant.Services.Interfaces"
+      },
+      "_origin": "ast",
+      "id": "csharp_namespace:83230034683a1d25",
+      "community": 3,
+      "norm_label": "inscriptionetudiant.services.interfaces"
+    },
+    {
+      "label": "IFiliereService",
+      "file_type": "code",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L10",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services.Interfaces",
+        "scope_chain": [
+          "s103"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice",
+      "community": 2,
+      "norm_label": "ifiliereservice"
+    },
+    {
+      "label": ".GetAllAsync()",
+      "file_type": "code",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L12",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services.Interfaces",
+        "scope_chain": [
+          "s103"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_getallasync",
+      "community": 2,
+      "norm_label": ".getallasync()"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_interfaces_ifiliereservice_cs_task",
+      "community": 2,
+      "norm_label": "task"
+    },
+    {
+      "label": "IEnumerable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_interfaces_ifiliereservice_cs_ienumerable",
+      "community": 2,
+      "norm_label": "ienumerable"
+    },
+    {
+      "label": ".GetByIdAsync()",
+      "file_type": "code",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L14",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services.Interfaces",
+        "scope_chain": [
+          "s103"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_getbyidasync",
+      "community": 2,
+      "norm_label": ".getbyidasync()"
+    },
+    {
+      "label": ".CreateAsync()",
+      "file_type": "code",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L16",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services.Interfaces",
+        "scope_chain": [
+          "s103"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_createasync",
+      "community": 2,
+      "norm_label": ".createasync()"
+    },
+    {
+      "label": ".UpdateAsync()",
+      "file_type": "code",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L18",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services.Interfaces",
+        "scope_chain": [
+          "s103"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_updateasync",
+      "community": 2,
+      "norm_label": ".updateasync()"
+    },
+    {
+      "label": ".DeleteAsync()",
+      "file_type": "code",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L20",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services.Interfaces",
+        "scope_chain": [
+          "s103"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_deleteasync",
+      "community": 2,
+      "norm_label": ".deleteasync()"
+    },
+    {
+      "label": ".ExistsAsync()",
+      "file_type": "code",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L22",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Services.Interfaces",
+        "scope_chain": [
+          "s103"
+        ]
+      },
+      "_origin": "ast",
+      "id": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_existsasync",
+      "community": 2,
+      "norm_label": ".existsasync()"
+    },
+    {
+      "label": "FiliereFormViewModel.cs",
+      "file_type": "code",
+      "source_file": "ViewModels/FiliereFormViewModel.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "viewmodels_filiereformviewmodel",
+      "community": 8,
+      "norm_label": "filiereformviewmodel.cs"
+    },
+    {
+      "label": "InscriptionEtudiant.ViewModels",
+      "file_type": "code",
+      "source_file": "ViewModels/FiliereFormViewModel.cs",
+      "source_location": "L5",
+      "type": "namespace",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "InscriptionEtudiant.ViewModels"
+      },
+      "_origin": "ast",
+      "id": "csharp_namespace:c60888646c7b28e1",
+      "community": 3,
+      "norm_label": "inscriptionetudiant.viewmodels"
+    },
+    {
+      "label": "FiliereFormViewModel",
+      "file_type": "code",
+      "source_file": "ViewModels/FiliereFormViewModel.cs",
+      "source_location": "L11",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.ViewModels",
+        "scope_chain": [
+          "s98"
+        ]
+      },
+      "_origin": "ast",
+      "id": "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel",
+      "community": 8,
+      "norm_label": "filiereformviewmodel"
+    },
+    {
+      "label": "IValidatableObject",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "ivalidatableobject",
+      "community": 8,
+      "norm_label": "ivalidatableobject"
+    },
+    {
+      "label": "DateTime",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "viewmodels_filiereformviewmodel_cs_datetime",
+      "community": 8,
+      "norm_label": "datetime"
+    },
+    {
+      "label": ".Validate()",
+      "file_type": "code",
+      "source_file": "ViewModels/FiliereFormViewModel.cs",
+      "source_location": "L34",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.ViewModels",
+        "scope_chain": [
+          "s98"
+        ]
+      },
+      "_origin": "ast",
+      "id": "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel_validate",
+      "community": 8,
+      "norm_label": ".validate()"
+    },
+    {
+      "label": "ValidationContext",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "validationcontext",
+      "community": 8,
+      "norm_label": "validationcontext"
+    },
+    {
+      "label": "IEnumerable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "viewmodels_filiereformviewmodel_cs_ienumerable",
+      "community": 8,
+      "norm_label": "ienumerable"
+    },
+    {
+      "label": "ValidationResult",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "validationresult",
+      "community": 8,
+      "norm_label": "validationresult"
+    },
+    {
+      "label": "LoginViewModel.cs",
+      "file_type": "code",
+      "source_file": "ViewModels/LoginViewModel.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "viewmodels_loginviewmodel",
+      "community": 1,
+      "norm_label": "loginviewmodel.cs"
+    },
+    {
+      "label": "LoginViewModel",
+      "file_type": "code",
+      "source_file": "ViewModels/LoginViewModel.cs",
+      "source_location": "L5",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.ViewModels",
+        "scope_chain": [
+          "s51"
+        ]
+      },
+      "_origin": "ast",
+      "id": "viewmodels_loginviewmodel_inscriptionetudiant_viewmodels_loginviewmodel",
+      "community": 1,
+      "norm_label": "loginviewmodel"
+    },
+    {
+      "label": "RegisterViewModel.cs",
+      "file_type": "code",
+      "source_file": "ViewModels/RegisterViewModel.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "viewmodels_registerviewmodel",
+      "community": 1,
+      "norm_label": "registerviewmodel.cs"
+    },
+    {
+      "label": "RegisterViewModel",
+      "file_type": "code",
+      "source_file": "ViewModels/RegisterViewModel.cs",
+      "source_location": "L5",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.ViewModels",
+        "scope_chain": [
+          "s51"
+        ]
+      },
+      "_origin": "ast",
+      "id": "viewmodels_registerviewmodel_inscriptionetudiant_viewmodels_registerviewmodel",
+      "community": 1,
+      "norm_label": "registerviewmodel"
+    },
+    {
+      "label": "Admin/Index.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Admin/Index.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_admin_index",
+      "community": 16,
+      "norm_label": "admin/index.cshtml"
+    },
+    {
+      "label": "Login.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Auth/Login.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_auth_login",
+      "community": 17,
+      "norm_label": "login.cshtml"
+    },
+    {
+      "label": "Register.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Auth/Register.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_auth_register",
+      "community": 18,
+      "norm_label": "register.cshtml"
+    },
+    {
+      "label": "Candidat/Index.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Candidat/Index.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_candidat_index",
+      "community": 19,
+      "norm_label": "candidat/index.cshtml"
+    },
+    {
+      "label": "Form.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Filiere/Form.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_filiere_form",
+      "community": 13,
+      "norm_label": "form.cshtml"
+    },
+    {
+      "label": "InscriptionEtudiant.ViewModels.FiliereFormViewModel",
+      "file_type": "code",
+      "source_file": "Views/Filiere/Form.cshtml",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "inscriptionetudiant_viewmodels_filiereformviewmodel",
+      "community": 13,
+      "norm_label": "inscriptionetudiant.viewmodels.filiereformviewmodel"
+    },
+    {
+      "label": "Filiere/Index.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Filiere/Index.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_filiere_index",
+      "community": 11,
+      "norm_label": "filiere/index.cshtml"
+    },
+    {
+      "label": "IEnumerable<InscriptionEtudiant.Models.Filiere>",
+      "file_type": "code",
+      "source_file": "Views/Filiere/Index.cshtml",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ienumerable_inscriptionetudiant_models_filiere",
+      "community": 11,
+      "norm_label": "ienumerable<inscriptionetudiant.models.filiere>"
+    },
+    {
+      "label": "Error.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Shared/Error.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_shared_error",
+      "community": 24,
+      "norm_label": "error.cshtml"
+    },
+    {
+      "label": "_AdminLayout.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Shared/_AdminLayout.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_shared_adminlayout",
+      "community": 20,
+      "norm_label": "_adminlayout.cshtml"
+    },
+    {
+      "label": "_AdminNavbar.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Shared/_AdminNavbar.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_shared_adminnavbar",
+      "community": 21,
+      "norm_label": "_adminnavbar.cshtml"
+    },
+    {
+      "label": "_AdminSidebar.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Shared/_AdminSidebar.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_shared_adminsidebar",
+      "community": 0,
+      "norm_label": "_adminsidebar.cshtml"
+    },
+    {
+      "label": "System",
+      "file_type": "code",
+      "source_file": "Views/Shared/_AdminSidebar.cshtml",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "system",
+      "community": 0,
+      "norm_label": "system"
+    },
+    {
+      "label": "_CandidatLayout.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Shared/_CandidatLayout.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_shared_candidatlayout",
+      "community": 22,
+      "norm_label": "_candidatlayout.cshtml"
+    },
+    {
+      "label": "_CandidatSidebar.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Shared/_CandidatSidebar.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_shared_candidatsidebar",
+      "community": 23,
+      "norm_label": "_candidatsidebar.cshtml"
+    },
+    {
+      "label": "_Layout.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Shared/_Layout.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_shared_layout",
+      "community": 25,
+      "norm_label": "_layout.cshtml"
+    },
+    {
+      "label": "_ValidationScriptsPartial.cshtml",
+      "file_type": "code",
+      "source_file": "Views/Shared/_ValidationScriptsPartial.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_shared_validationscriptspartial",
+      "community": 26,
+      "norm_label": "_validationscriptspartial.cshtml"
+    },
+    {
+      "label": "_ViewImports.cshtml",
+      "file_type": "code",
+      "source_file": "Views/_ViewImports.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_viewimports",
+      "community": 12,
+      "norm_label": "_viewimports.cshtml"
+    },
+    {
+      "label": "InscriptionEtudiant.Models",
+      "file_type": "code",
+      "source_file": "Views/_ViewImports.cshtml",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "inscriptionetudiant_models",
+      "community": 12,
+      "norm_label": "inscriptionetudiant.models"
+    },
+    {
+      "label": "_ViewStart.cshtml",
+      "file_type": "code",
+      "source_file": "Views/_ViewStart.cshtml",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "views_viewstart",
+      "community": 27,
+      "norm_label": "_viewstart.cshtml"
+    },
+    {
+      "label": "ApplicationDbContext.cs",
+      "file_type": "code",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_applicationdbcontext",
+      "community": 3,
+      "norm_label": "applicationdbcontext.cs"
+    },
+    {
+      "label": "InscriptionEtudiant.Data",
+      "file_type": "code",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L4",
+      "type": "namespace",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "InscriptionEtudiant.Data"
+      },
+      "_origin": "ast",
+      "id": "csharp_namespace:48954b253b1b8b54",
+      "community": 3,
+      "norm_label": "inscriptionetudiant.data"
+    },
+    {
+      "label": "ApplicationDbContext",
+      "file_type": "code",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L6",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Data",
+        "scope_chain": [
+          "s78"
+        ]
+      },
+      "_origin": "ast",
+      "id": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext",
+      "community": 1,
+      "norm_label": "applicationdbcontext"
+    },
+    {
+      "label": "DbContext",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "dbcontext",
+      "community": 1,
+      "norm_label": "dbcontext"
+    },
+    {
+      "label": "DbSet",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "dbset",
+      "community": 1,
+      "norm_label": "dbset"
+    },
+    {
+      "label": ".OnModelCreating()",
+      "file_type": "code",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L19",
+      "metadata": {
+        "namespace": "InscriptionEtudiant.Data",
+        "scope_chain": [
+          "s78"
+        ]
+      },
+      "_origin": "ast",
+      "id": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext_onmodelcreating",
+      "community": 1,
+      "norm_label": ".onmodelcreating()"
+    },
+    {
+      "label": "ModelBuilder",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "data_applicationdbcontext_cs_modelbuilder",
+      "community": 1,
+      "norm_label": "modelbuilder"
+    },
+    {
+      "label": "auth.js",
+      "file_type": "code",
+      "source_file": "wwwroot/js/auth.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wwwroot_js_auth",
+      "community": 28,
+      "norm_label": "auth.js"
+    },
+    {
+      "label": "filiere.js",
+      "file_type": "code",
+      "source_file": "wwwroot/js/filiere.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wwwroot_js_filiere",
+      "community": 10,
+      "norm_label": "filiere.js"
+    },
+    {
+      "label": "confirmDelete()",
+      "file_type": "code",
+      "source_file": "wwwroot/js/filiere.js",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "wwwroot_js_filiere_confirmdelete",
+      "community": 10,
+      "norm_label": "confirmdelete()"
+    },
+    {
+      "label": "validateFiliereForm()",
+      "file_type": "code",
+      "source_file": "wwwroot/js/filiere.js",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "wwwroot_js_filiere_validatefiliereform",
+      "community": 10,
+      "norm_label": "validatefiliereform()"
+    },
+    {
+      "label": "sidebar.js",
+      "file_type": "code",
+      "source_file": "wwwroot/js/sidebar.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wwwroot_js_sidebar",
+      "community": 14,
+      "norm_label": "sidebar.js"
+    },
+    {
+      "label": "toggleSidebar()",
+      "file_type": "code",
+      "source_file": "wwwroot/js/sidebar.js",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "wwwroot_js_sidebar_togglesidebar",
+      "community": 14,
+      "norm_label": "togglesidebar()"
+    },
+    {
+      "label": "site.js",
+      "file_type": "code",
+      "source_file": "wwwroot/js/site.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wwwroot_js_site",
+      "community": 29,
+      "norm_label": "site.js"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/AdminController.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_admincontroller",
+      "target": "controllers_admin_admincontroller_inscriptionetudiant_controllers_admin_admincontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/AdminController.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_admincontroller",
+      "target": "csharp_namespace:646b4130d620592e",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller",
+      "target": "csharp_namespace:646b4130d620592e",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/AdminController.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "Controller"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_admincontroller_inscriptionetudiant_controllers_admin_admincontroller",
+      "target": "controller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/AdminController.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_admincontroller_inscriptionetudiant_controllers_admin_admincontroller",
+      "target": "controllers_admin_admincontroller_inscriptionetudiant_controllers_admin_admincontroller_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "Controller"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller",
+      "target": "controller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "Controller"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller",
+      "target": "controller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/CandidatController.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "Controller"
+      },
+      "_origin": "ast",
+      "source": "controllers_candidatcontroller_inscriptionetudiant_controllers_candidatcontroller",
+      "target": "controller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/AdminController.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_admincontroller_inscriptionetudiant_controllers_admin_admincontroller_index",
+      "target": "controllers_admin_admincontroller_cs_iactionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller",
+      "target": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Services.Interfaces",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller",
+      "target": "csharp_namespace:83230034683a1d25",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Models",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller",
+      "target": "csharp_namespace:9a3df721a12ee86a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.ViewModels",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller",
+      "target": "csharp_namespace:c60888646c7b28e1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "System",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller",
+      "target": "system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller",
+      "target": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_create",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller",
+      "target": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_delete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller",
+      "target": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_edit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller",
+      "target": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "IFiliereService"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_index",
+      "target": "controllers_admin_filierecontroller_cs_iactionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_index",
+      "target": "controllers_admin_filierecontroller_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_index",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_getallasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_create",
+      "target": "controllers_admin_filierecontroller_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L125",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_delete",
+      "target": "controllers_admin_filierecontroller_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L91",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_edit",
+      "target": "controllers_admin_filierecontroller_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_create",
+      "target": "controllers_admin_filierecontroller_cs_iactionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L125",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_delete",
+      "target": "controllers_admin_filierecontroller_cs_iactionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L91",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_edit",
+      "target": "controllers_admin_filierecontroller_cs_iactionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpGet"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_create",
+      "target": "controllers_admin_filierecontroller_cs_httpget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpPost"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_create",
+      "target": "controllers_admin_filierecontroller_cs_httppost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "ValidateAntiForgeryToken"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_create",
+      "target": "controllers_admin_filierecontroller_cs_validateantiforgerytoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_create",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_createasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "FiliereFormViewModel"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_create",
+      "target": "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L71",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpGet"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_edit",
+      "target": "controllers_admin_filierecontroller_cs_httpget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L125",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpPost"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_delete",
+      "target": "controllers_admin_filierecontroller_cs_httppost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L91",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpPost"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_edit",
+      "target": "controllers_admin_filierecontroller_cs_httppost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L125",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "ValidateAntiForgeryToken"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_delete",
+      "target": "controllers_admin_filierecontroller_cs_validateantiforgerytoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L91",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "ValidateAntiForgeryToken"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_edit",
+      "target": "controllers_admin_filierecontroller_cs_validateantiforgerytoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_edit",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_existsasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_edit",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_getbyidasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_edit",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_updateasync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L91",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "FiliereFormViewModel"
+      },
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_edit",
+      "target": "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Controllers/Admin/FiliereController.cs",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_delete",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_deleteasync"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_authcontroller",
+      "target": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Models",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller",
+      "target": "csharp_namespace:9a3df721a12ee86a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.ViewModels",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller",
+      "target": "csharp_namespace:c60888646c7b28e1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Services",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller",
+      "target": "csharp_namespace:d53ed6b6d48bbb5b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_authcontroller",
+      "target": "csharp_namespace:fc211e59efed416e",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/CandidatController.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_candidatcontroller",
+      "target": "csharp_namespace:fc211e59efed416e",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L179",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller",
+      "target": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_createauthenticationcookie",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller",
+      "target": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L160",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller",
+      "target": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_logout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller",
+      "target": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_register",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "AuthServiceInt"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller",
+      "target": "services_authserviceint_inscriptionetudiant_services_authserviceint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpGet"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_register",
+      "target": "controllers_authcontroller_cs_httpget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpPost"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_register",
+      "target": "controllers_authcontroller_cs_httppost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_register",
+      "target": "controllers_authcontroller_cs_iactionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_register",
+      "target": "controllers_authcontroller_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "ValidateAntiForgeryToken"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_register",
+      "target": "controllers_authcontroller_cs_validateantiforgerytoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_register",
+      "target": "services_authserviceint_inscriptionetudiant_services_authserviceint_registercandidat"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "RegisterViewModel"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_register",
+      "target": "viewmodels_registerviewmodel_inscriptionetudiant_viewmodels_registerviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L85",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_login",
+      "target": "controllers_authcontroller_cs_iactionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L160",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_logout",
+      "target": "controllers_authcontroller_cs_iactionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L73",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpGet"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_login",
+      "target": "controllers_authcontroller_cs_httpget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L179",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_createauthenticationcookie",
+      "target": "controllers_authcontroller_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L85",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_login",
+      "target": "controllers_authcontroller_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L160",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_logout",
+      "target": "controllers_authcontroller_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L85",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpPost"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_login",
+      "target": "controllers_authcontroller_cs_httppost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L160",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "HttpPost"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_logout",
+      "target": "controllers_authcontroller_cs_httppost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L85",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "ValidateAntiForgeryToken"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_login",
+      "target": "controllers_authcontroller_cs_validateantiforgerytoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_login",
+      "target": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_createauthenticationcookie",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_login",
+      "target": "services_authserviceint_inscriptionetudiant_services_authserviceint_loginadmin"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_login",
+      "target": "services_authserviceint_inscriptionetudiant_services_authserviceint_logincandidat"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/AuthController.cs",
+      "source_location": "L85",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "LoginViewModel"
+      },
+      "_origin": "ast",
+      "source": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_login",
+      "target": "viewmodels_loginviewmodel_inscriptionetudiant_viewmodels_loginviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/CandidatController.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_candidatcontroller",
+      "target": "controllers_candidatcontroller_inscriptionetudiant_controllers_candidatcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/CandidatController.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "controllers_candidatcontroller_inscriptionetudiant_controllers_candidatcontroller",
+      "target": "controllers_candidatcontroller_inscriptionetudiant_controllers_candidatcontroller_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Controllers/CandidatController.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "IActionResult"
+      },
+      "_origin": "ast",
+      "source": "controllers_candidatcontroller_inscriptionetudiant_controllers_candidatcontroller_index",
+      "target": "controllers_candidatcontroller_cs_iactionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "InscriptionEtudiant.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "inscriptionetudiant_csproj_inscriptionetudiant",
+      "target": "framework_net10_0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "InscriptionEtudiant.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "inscriptionetudiant_csproj_inscriptionetudiant",
+      "target": "nuget_microsoft_entityframeworkcore_design",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "InscriptionEtudiant.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "inscriptionetudiant_csproj_inscriptionetudiant",
+      "target": "nuget_microsoft_entityframeworkcore_sqlserver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "InscriptionEtudiant.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "inscriptionetudiant_csproj_inscriptionetudiant",
+      "target": "nuget_microsoft_entityframeworkcore_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "InscriptionEtudiant.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "inscriptionetudiant_csproj_inscriptionetudiant",
+      "target": "sdk_microsoft_net_sdk_web",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "InscriptionEtudiant.slnx",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "inscriptionetudiant_slnx_inscriptionetudiant",
+      "target": "inscriptionetudiant_slnx_inscriptionetudiant",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730143534_InitialCreate.Designer.cs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Data",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260730143534_initialcreate_designer",
+      "target": "csharp_namespace:48954b253b1b8b54",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730143534_InitialCreate.Designer.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730143534_initialcreate_designer",
+      "target": "csharp_namespace:51d43ece672ba51b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730143534_InitialCreate.Designer.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730143534_initialcreate_designer",
+      "target": "migrations_20260730143534_initialcreate_designer_inscriptionetudiant_migrations_initialcreate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730143534_InitialCreate.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730143534_initialcreate",
+      "target": "csharp_namespace:51d43ece672ba51b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration",
+      "target": "csharp_namespace:51d43ece672ba51b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.Designer.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration_designer",
+      "target": "csharp_namespace:51d43ece672ba51b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/ApplicationDbContextModelSnapshot.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_applicationdbcontextmodelsnapshot",
+      "target": "csharp_namespace:51d43ece672ba51b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730143534_InitialCreate.Designer.cs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730143534_initialcreate_designer_inscriptionetudiant_migrations_initialcreate",
+      "target": "migrations_20260730143534_initialcreate_designer_inscriptionetudiant_migrations_initialcreate_buildtargetmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730143534_InitialCreate.Designer.cs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ModelBuilder"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260730143534_initialcreate_designer_inscriptionetudiant_migrations_initialcreate_buildtargetmodel",
+      "target": "migrations_20260730143534_initialcreate_designer_cs_modelbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730143534_InitialCreate.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730143534_initialcreate",
+      "target": "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730143534_InitialCreate.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "Migration"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate",
+      "target": "migration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730143534_InitialCreate.cs",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate",
+      "target": "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate_down",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730143534_InitialCreate.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate",
+      "target": "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate_up",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "Migration"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration",
+      "target": "migration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730143534_InitialCreate.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "MigrationBuilder"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate_up",
+      "target": "migrations_20260730143534_initialcreate_cs_migrationbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730143534_InitialCreate.cs",
+      "source_location": "L67",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "MigrationBuilder"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate_down",
+      "target": "migrations_20260730143534_initialcreate_cs_migrationbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.Designer.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Data",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration_designer",
+      "target": "csharp_namespace:48954b253b1b8b54",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.Designer.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration_designer",
+      "target": "migrations_20260730203152_filiermigration_designer_inscriptionetudiant_migrations_filiermigration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.Designer.cs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "System",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration_designer",
+      "target": "system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.Designer.cs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration_designer_inscriptionetudiant_migrations_filiermigration",
+      "target": "migrations_20260730203152_filiermigration_designer_inscriptionetudiant_migrations_filiermigration_buildtargetmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.Designer.cs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ModelBuilder"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration_designer_inscriptionetudiant_migrations_filiermigration_buildtargetmodel",
+      "target": "migrations_20260730203152_filiermigration_designer_cs_modelbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration",
+      "target": "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.cs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "System",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration",
+      "target": "system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.cs",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration",
+      "target": "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration_down",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration",
+      "target": "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration_up",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "MigrationBuilder"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration_up",
+      "target": "migrations_20260730203152_filiermigration_cs_migrationbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/20260730203152_FilierMigration.cs",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "MigrationBuilder"
+      },
+      "_origin": "ast",
+      "source": "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration_down",
+      "target": "migrations_20260730203152_filiermigration_cs_migrationbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/ApplicationDbContextModelSnapshot.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Data",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "migrations_applicationdbcontextmodelsnapshot",
+      "target": "csharp_namespace:48954b253b1b8b54",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/ApplicationDbContextModelSnapshot.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_applicationdbcontextmodelsnapshot",
+      "target": "migrations_applicationdbcontextmodelsnapshot_inscriptionetudiant_migrations_applicationdbcontextmodelsnapshot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/ApplicationDbContextModelSnapshot.cs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "System",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "migrations_applicationdbcontextmodelsnapshot",
+      "target": "system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/ApplicationDbContextModelSnapshot.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "migrations_applicationdbcontextmodelsnapshot_inscriptionetudiant_migrations_applicationdbcontextmodelsnapshot",
+      "target": "migrations_applicationdbcontextmodelsnapshot_inscriptionetudiant_migrations_applicationdbcontextmodelsnapshot_buildmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/ApplicationDbContextModelSnapshot.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "ModelSnapshot"
+      },
+      "_origin": "ast",
+      "source": "migrations_applicationdbcontextmodelsnapshot_inscriptionetudiant_migrations_applicationdbcontextmodelsnapshot",
+      "target": "modelsnapshot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Migrations/ApplicationDbContextModelSnapshot.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ModelBuilder"
+      },
+      "_origin": "ast",
+      "source": "migrations_applicationdbcontextmodelsnapshot_inscriptionetudiant_migrations_applicationdbcontextmodelsnapshot_buildmodel",
+      "target": "migrations_applicationdbcontextmodelsnapshot_cs_modelbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Administrateur.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_administrateur",
+      "target": "csharp_namespace:9a3df721a12ee86a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Administrateur.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_administrateur",
+      "target": "models_administrateur_inscriptionetudiant_models_administrateur",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Models",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "data_applicationdbcontext",
+      "target": "csharp_namespace:9a3df721a12ee86a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Candidat.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_candidat",
+      "target": "csharp_namespace:9a3df721a12ee86a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/ErrorViewModel.cs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_errorviewmodel",
+      "target": "csharp_namespace:9a3df721a12ee86a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Filiere.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_filiere",
+      "target": "csharp_namespace:9a3df721a12ee86a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Models",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "services_authservice",
+      "target": "csharp_namespace:9a3df721a12ee86a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Models",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "services_authserviceint",
+      "target": "csharp_namespace:9a3df721a12ee86a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Models",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice",
+      "target": "csharp_namespace:9a3df721a12ee86a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Models",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice",
+      "target": "csharp_namespace:9a3df721a12ee86a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Administrateur"
+      },
+      "_origin": "ast",
+      "source": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext",
+      "target": "models_administrateur_inscriptionetudiant_models_administrateur",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Administrateur"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice_loginadmin",
+      "target": "models_administrateur_inscriptionetudiant_models_administrateur",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Administrateur"
+      },
+      "_origin": "ast",
+      "source": "services_authserviceint_inscriptionetudiant_services_authserviceint_loginadmin",
+      "target": "models_administrateur_inscriptionetudiant_models_administrateur",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Candidat.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_candidat",
+      "target": "models_candidat_inscriptionetudiant_models_candidat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Candidat"
+      },
+      "_origin": "ast",
+      "source": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext",
+      "target": "models_candidat_inscriptionetudiant_models_candidat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L43",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Candidat"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice_logincandidat",
+      "target": "models_candidat_inscriptionetudiant_models_candidat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Candidat"
+      },
+      "_origin": "ast",
+      "source": "services_authserviceint_inscriptionetudiant_services_authserviceint_logincandidat",
+      "target": "models_candidat_inscriptionetudiant_models_candidat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/ErrorViewModel.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_errorviewmodel",
+      "target": "models_errorviewmodel_inscriptionetudiant_models_errorviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Filiere.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_filiere",
+      "target": "models_filiere_inscriptionetudiant_models_filiere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Filiere.cs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "System",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "models_filiere",
+      "target": "system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Filiere",
+        "qualified": true,
+        "ref_qualifier": "InscriptionEtudiant.Models"
+      },
+      "_origin": "ast",
+      "source": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext",
+      "target": "models_filiere_inscriptionetudiant_models_filiere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Filiere.cs",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "DateTime"
+      },
+      "_origin": "ast",
+      "source": "models_filiere_inscriptionetudiant_models_filiere",
+      "target": "models_filiere_cs_datetime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Filiere"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice_createasync",
+      "target": "models_filiere_inscriptionetudiant_models_filiere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L38",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Filiere"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice_getallasync",
+      "target": "models_filiere_inscriptionetudiant_models_filiere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L49",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Filiere"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice_getbyidasync",
+      "target": "models_filiere_inscriptionetudiant_models_filiere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L54",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Filiere"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice_updateasync",
+      "target": "models_filiere_inscriptionetudiant_models_filiere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Filiere"
+      },
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_createasync",
+      "target": "models_filiere_inscriptionetudiant_models_filiere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Filiere"
+      },
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_getallasync",
+      "target": "models_filiere_inscriptionetudiant_models_filiere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Filiere"
+      },
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_getbyidasync",
+      "target": "models_filiere_inscriptionetudiant_models_filiere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Filiere"
+      },
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_updateasync",
+      "target": "models_filiere_inscriptionetudiant_models_filiere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Program.cs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Data",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "program",
+      "target": "csharp_namespace:48954b253b1b8b54",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Program.cs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Services",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "program",
+      "target": "csharp_namespace:d53ed6b6d48bbb5b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings",
+      "target": "properties_launchsettings_profiles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings",
+      "target": "properties_launchsettings_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_profiles",
+      "target": "properties_launchsettings_profiles_http",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_profiles",
+      "target": "properties_launchsettings_profiles_https",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_profiles_http",
+      "target": "properties_launchsettings_http_applicationurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_profiles_http",
+      "target": "properties_launchsettings_http_commandname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_profiles_http",
+      "target": "properties_launchsettings_http_dotnetrunmessages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_profiles_http",
+      "target": "properties_launchsettings_http_environmentvariables",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_profiles_http",
+      "target": "properties_launchsettings_http_launchbrowser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_http_environmentvariables",
+      "target": "properties_launchsettings_environmentvariables_aspnetcore_environment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_https_environmentvariables",
+      "target": "properties_launchsettings_environmentvariables_aspnetcore_environment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_profiles_https",
+      "target": "properties_launchsettings_https_applicationurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_profiles_https",
+      "target": "properties_launchsettings_https_commandname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_profiles_https",
+      "target": "properties_launchsettings_https_dotnetrunmessages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_profiles_https",
+      "target": "properties_launchsettings_https_environmentvariables",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Properties/launchSettings.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "properties_launchsettings_profiles_https",
+      "target": "properties_launchsettings_https_launchbrowser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Data",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "services_authservice",
+      "target": "csharp_namespace:48954b253b1b8b54",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.ViewModels",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "services_authservice",
+      "target": "csharp_namespace:c60888646c7b28e1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authservice",
+      "target": "csharp_namespace:d53ed6b6d48bbb5b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authservice",
+      "target": "services_authservice_inscriptionetudiant_services_authservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authserviceint",
+      "target": "csharp_namespace:d53ed6b6d48bbb5b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_filiereservice",
+      "target": "csharp_namespace:d53ed6b6d48bbb5b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "ApplicationDbContext"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice",
+      "target": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice",
+      "target": "services_authservice_inscriptionetudiant_services_authservice_hashpassword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice",
+      "target": "services_authservice_inscriptionetudiant_services_authservice_loginadmin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice",
+      "target": "services_authservice_inscriptionetudiant_services_authservice_logincandidat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice",
+      "target": "services_authservice_inscriptionetudiant_services_authservice_registercandidat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice",
+      "target": "services_authservice_inscriptionetudiant_services_authservice_verifypassword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "AuthServiceInt"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice",
+      "target": "services_authserviceint_inscriptionetudiant_services_authserviceint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice_registercandidat",
+      "target": "services_authservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice_registercandidat",
+      "target": "services_authservice_inscriptionetudiant_services_authservice_hashpassword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "RegisterViewModel"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice_registercandidat",
+      "target": "viewmodels_registerviewmodel_inscriptionetudiant_viewmodels_registerviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice_loginadmin",
+      "target": "services_authservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L43",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice_logincandidat",
+      "target": "services_authservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice_logincandidat",
+      "target": "services_authservice_inscriptionetudiant_services_authservice_verifypassword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L43",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "LoginViewModel"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice_logincandidat",
+      "target": "viewmodels_loginviewmodel_inscriptionetudiant_viewmodels_loginviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice_loginadmin",
+      "target": "services_authservice_inscriptionetudiant_services_authservice_verifypassword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthService.cs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "LoginViewModel"
+      },
+      "_origin": "ast",
+      "source": "services_authservice_inscriptionetudiant_services_authservice_loginadmin",
+      "target": "viewmodels_loginviewmodel_inscriptionetudiant_viewmodels_loginviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.ViewModels",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "services_authserviceint",
+      "target": "csharp_namespace:c60888646c7b28e1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authserviceint",
+      "target": "services_authserviceint_inscriptionetudiant_services_authserviceint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authserviceint_inscriptionetudiant_services_authserviceint",
+      "target": "services_authserviceint_inscriptionetudiant_services_authserviceint_loginadmin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authserviceint_inscriptionetudiant_services_authserviceint",
+      "target": "services_authserviceint_inscriptionetudiant_services_authserviceint_logincandidat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_authserviceint_inscriptionetudiant_services_authserviceint",
+      "target": "services_authserviceint_inscriptionetudiant_services_authserviceint_registercandidat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_authserviceint_inscriptionetudiant_services_authserviceint_registercandidat",
+      "target": "services_authserviceint_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "RegisterViewModel"
+      },
+      "_origin": "ast",
+      "source": "services_authserviceint_inscriptionetudiant_services_authserviceint_registercandidat",
+      "target": "viewmodels_registerviewmodel_inscriptionetudiant_viewmodels_registerviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_authserviceint_inscriptionetudiant_services_authserviceint_loginadmin",
+      "target": "services_authserviceint_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_authserviceint_inscriptionetudiant_services_authserviceint_logincandidat",
+      "target": "services_authserviceint_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "LoginViewModel"
+      },
+      "_origin": "ast",
+      "source": "services_authserviceint_inscriptionetudiant_services_authserviceint_logincandidat",
+      "target": "viewmodels_loginviewmodel_inscriptionetudiant_viewmodels_loginviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/AuthServiceInt.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "LoginViewModel"
+      },
+      "_origin": "ast",
+      "source": "services_authserviceint_inscriptionetudiant_services_authserviceint_loginadmin",
+      "target": "viewmodels_loginviewmodel_inscriptionetudiant_viewmodels_loginviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Data",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice",
+      "target": "csharp_namespace:48954b253b1b8b54",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "InscriptionEtudiant.Services.Interfaces",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice",
+      "target": "csharp_namespace:83230034683a1d25",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_filiereservice",
+      "target": "services_filiereservice_inscriptionetudiant_services_filiereservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "ApplicationDbContext"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice",
+      "target": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice",
+      "target": "services_filiereservice_inscriptionetudiant_services_filiereservice_createasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice",
+      "target": "services_filiereservice_inscriptionetudiant_services_filiereservice_deleteasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice",
+      "target": "services_filiereservice_inscriptionetudiant_services_filiereservice_existsasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice",
+      "target": "services_filiereservice_inscriptionetudiant_services_filiereservice_getallasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice",
+      "target": "services_filiereservice_inscriptionetudiant_services_filiereservice_getbyidasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice",
+      "target": "services_filiereservice_inscriptionetudiant_services_filiereservice_updateasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "IFiliereService"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice_createasync",
+      "target": "services_filiereservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice_deleteasync",
+      "target": "services_filiereservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L60",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice_existsasync",
+      "target": "services_filiereservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L38",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice_getallasync",
+      "target": "services_filiereservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L49",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice_getbyidasync",
+      "target": "services_filiereservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L54",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice_updateasync",
+      "target": "services_filiereservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/FiliereService.cs",
+      "source_location": "L38",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IEnumerable"
+      },
+      "_origin": "ast",
+      "source": "services_filiereservice_inscriptionetudiant_services_filiereservice_getallasync",
+      "target": "services_filiereservice_cs_ienumerable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice",
+      "target": "csharp_namespace:83230034683a1d25",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_createasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_deleteasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_existsasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_getallasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_getbyidasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice",
+      "target": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_updateasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "IEnumerable"
+      },
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_getallasync",
+      "target": "services_interfaces_ifiliereservice_cs_ienumerable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_getallasync",
+      "target": "services_interfaces_ifiliereservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_createasync",
+      "target": "services_interfaces_ifiliereservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_deleteasync",
+      "target": "services_interfaces_ifiliereservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_existsasync",
+      "target": "services_interfaces_ifiliereservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_getbyidasync",
+      "target": "services_interfaces_ifiliereservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Interfaces/IFiliereService.cs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_updateasync",
+      "target": "services_interfaces_ifiliereservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ViewModels/FiliereFormViewModel.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "viewmodels_filiereformviewmodel",
+      "target": "csharp_namespace:c60888646c7b28e1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ViewModels/FiliereFormViewModel.cs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "System",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "viewmodels_filiereformviewmodel",
+      "target": "system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ViewModels/FiliereFormViewModel.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "viewmodels_filiereformviewmodel",
+      "target": "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ViewModels/LoginViewModel.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "viewmodels_loginviewmodel",
+      "target": "csharp_namespace:c60888646c7b28e1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ViewModels/RegisterViewModel.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "viewmodels_registerviewmodel",
+      "target": "csharp_namespace:c60888646c7b28e1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "ViewModels/FiliereFormViewModel.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "IValidatableObject"
+      },
+      "_origin": "ast",
+      "source": "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel",
+      "target": "ivalidatableobject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "ViewModels/FiliereFormViewModel.cs",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "DateTime"
+      },
+      "_origin": "ast",
+      "source": "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel",
+      "target": "viewmodels_filiereformviewmodel_cs_datetime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ViewModels/FiliereFormViewModel.cs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel",
+      "target": "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel_validate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "ViewModels/FiliereFormViewModel.cs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ValidationContext"
+      },
+      "_origin": "ast",
+      "source": "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel_validate",
+      "target": "validationcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "ViewModels/FiliereFormViewModel.cs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "ValidationResult"
+      },
+      "_origin": "ast",
+      "source": "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel_validate",
+      "target": "validationresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "ViewModels/FiliereFormViewModel.cs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "IEnumerable"
+      },
+      "_origin": "ast",
+      "source": "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel_validate",
+      "target": "viewmodels_filiereformviewmodel_cs_ienumerable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ViewModels/LoginViewModel.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "viewmodels_loginviewmodel",
+      "target": "viewmodels_loginviewmodel_inscriptionetudiant_viewmodels_loginviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ViewModels/RegisterViewModel.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "viewmodels_registerviewmodel",
+      "target": "viewmodels_registerviewmodel_inscriptionetudiant_viewmodels_registerviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/Filiere/Form.cshtml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_filiere_form",
+      "target": "inscriptionetudiant_viewmodels_filiereformviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/Filiere/Index.cshtml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_filiere_index",
+      "target": "ienumerable_inscriptionetudiant_models_filiere",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/Shared/_AdminSidebar.cshtml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_shared_adminsidebar",
+      "target": "system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/_ViewImports.cshtml",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_viewimports",
+      "target": "inscriptionetudiant_models",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_applicationdbcontext",
+      "target": "csharp_namespace:48954b253b1b8b54",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_applicationdbcontext",
+      "target": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext",
+      "target": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext_onmodelcreating",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "DbContext"
+      },
+      "_origin": "ast",
+      "source": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext",
+      "target": "dbcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "DbSet"
+      },
+      "_origin": "ast",
+      "source": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext",
+      "target": "dbset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "data/ApplicationDbContext.cs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ModelBuilder"
+      },
+      "_origin": "ast",
+      "source": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext_onmodelcreating",
+      "target": "data_applicationdbcontext_cs_modelbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wwwroot/js/filiere.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wwwroot_js_filiere",
+      "target": "wwwroot_js_filiere_confirmdelete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wwwroot/js/filiere.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wwwroot_js_filiere",
+      "target": "wwwroot_js_filiere_validatefiliereform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wwwroot/js/sidebar.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wwwroot_js_sidebar",
+      "target": "wwwroot_js_sidebar_togglesidebar",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "9f6177abd5589d97bf96457632b33daf6ebcf3f7"
+}

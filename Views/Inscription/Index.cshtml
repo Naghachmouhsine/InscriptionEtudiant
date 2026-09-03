@@ -1,0 +1,613 @@
+@using System.Linq
+@using System.Text.Json
+@using InscriptionEtudiant.Infrastructure
+@using InscriptionEtudiant.Infrastructure.Ui
+@using Microsoft.AspNetCore.Mvc.Rendering
+@model InscriptionEtudiant.ViewModels.CreateInscriptionViewModel
+@{
+    Layout = "_CandidatLayout";
+    ViewData["Title"] = "Créer mon dossier d'inscription";
+
+    var successMessage = TempData["Success"] as string;
+    var errorMessage = TempData["Error"] as string;
+    var warningMessage = TempData["Warning"] as string;
+    var infoMessage = TempData["Info"] as string;
+    var validationMessages = (TempData["ValidationErrors"] as string ?? string.Empty)
+        .Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+    var validationFocus = TempData["ValidationFocus"] as string ?? string.Empty;
+    var filieresDisponibles = Model.FilieresDisponibles ?? Enumerable.Empty<Filiere>();
+    var seriesBac = ViewBag.SeriesBac as IEnumerable<SelectListItem> ?? Enumerable.Empty<SelectListItem>();
+    var mentions = ViewBag.Mentions as IEnumerable<SelectListItem> ?? Enumerable.Empty<SelectListItem>();
+}
+
+<link rel="stylesheet" href="~/css/inscription.css" />
+
+<style>
+    .wizard-alert-stack {
+        display: grid;
+        gap: .75rem;
+        margin-bottom: 1rem;
+    }
+
+    .wizard-alert-stack .alert {
+        box-shadow: 0 .75rem 1.5rem rgba(15, 23, 42, .08);
+        border: 0;
+        animation: slideDown .2s ease-out;
+    }
+
+    .alert-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: .5rem;
+        flex: 0 0 auto;
+    }
+
+    .is-fading {
+        opacity: 0;
+        transform: translateY(-.5rem);
+        transition: opacity .2s ease, transform .2s ease;
+    }
+
+    @@keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-.75rem);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .review-grid {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .review-card {
+        border-radius: 1rem;
+        border: 1px solid rgba(27, 46, 76, 0.08);
+        background: #fff;
+        box-shadow: 0 8px 20px rgba(17, 39, 72, 0.04);
+    }
+
+    .review-card .card-body {
+        display: grid;
+        gap: .75rem;
+    }
+
+    .review-list {
+        margin: 0;
+        padding-left: 1rem;
+    }
+
+    .review-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    .step-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: .35rem;
+        border-radius: 999px;
+        padding: .35rem .75rem;
+        background: rgba(13, 110, 253, 0.08);
+        color: #0d6efd;
+        font-weight: 600;
+        font-size: .85rem;
+    }
+
+    .review-empty {
+        padding: .875rem 1rem;
+        border-radius: .75rem;
+        background: #f8fafc;
+        color: #475569;
+        border: 1px dashed #cbd5e1;
+    }
+
+    .modal-confirm .modal-header {
+        border-bottom: 0;
+    }
+
+    .modal-confirm .modal-footer {
+        border-top: 0;
+    }
+
+    .wizard-help {
+        color: #64748b;
+    }
+</style>
+
+<div class="inscription-wizard container-fluid">
+    <div class="wizard-shell">
+        <div id="wizardAlerts" class="wizard-alert-stack" role="status" aria-live="polite">
+            @if (!string.IsNullOrWhiteSpace(successMessage))
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert" aria-live="polite">
+                    <span class="d-flex align-items-start">
+                        <span class="alert-icon"><i class="bi bi-check-circle-fill"></i></span>
+                        <span>@successMessage</span>
+                    </span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer le message"></button>
+                </div>
+            }
+            @if (!string.IsNullOrWhiteSpace(errorMessage))
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert" aria-live="polite">
+                    <span class="d-flex align-items-start">
+                        <span class="alert-icon"><i class="bi bi-exclamation-triangle-fill"></i></span>
+                        <span>@errorMessage</span>
+                    </span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer le message"></button>
+                </div>
+            }
+            @if (!string.IsNullOrWhiteSpace(warningMessage))
+            {
+                <div class="alert alert-warning alert-dismissible fade show" role="alert" aria-live="polite">
+                    <span class="d-flex align-items-start">
+                        <span class="alert-icon"><i class="bi bi-exclamation-circle-fill"></i></span>
+                        <span>@warningMessage</span>
+                    </span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer le message"></button>
+                </div>
+            }
+            @if (!string.IsNullOrWhiteSpace(infoMessage))
+            {
+                <div class="alert alert-info alert-dismissible fade show" role="alert" aria-live="polite">
+                    <span class="d-flex align-items-start">
+                        <span class="alert-icon"><i class="bi bi-info-circle-fill"></i></span>
+                        <span>@infoMessage</span>
+                    </span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer le message"></button>
+                </div>
+            }
+            @if (validationMessages.Length > 0)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert" aria-live="polite" data-validation-focus="@validationFocus">
+                    <div class="d-flex align-items-start">
+                        <span class="alert-icon"><i class="bi bi-exclamation-triangle-fill"></i></span>
+                        <div>
+                            <strong>Veuillez corriger les points suivants :</strong>
+                            <ul class="mb-0 mt-2 ps-3">
+                                @foreach (var message in validationMessages)
+                                {
+                                    <li>@message</li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer le message"></button>
+                </div>
+            }
+        </div>
+
+        <header class="wizard-header">
+            <div class="wizard-hero">
+                <div class="wizard-hero-copy">
+                    <span class="wizard-eyebrow">Dossier n° @Model.CNE · Année universitaire 2026-2027</span>
+                    <h1>Créer mon dossier d'inscription</h1>
+                    <p class="wizard-subtitle">
+                        Complétez les 6 étapes ci-dessous. Vous pouvez relire, modifier et confirmer votre dossier en toute simplicité.
+                    </p>
+                </div>
+                <div class="wizard-hero-metrics">
+                    <div class="metric-card">
+                        <span class="metric-label">Identifiant</span>
+                        <strong>@Model.CNE</strong>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Statut</span>
+                        <strong>Brouillon</strong>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Étapes</span>
+                        <strong>6</strong>
+                    </div>
+                </div>
+            </div>
+
+            <ol class="progress-steps" role="list" aria-label="Étapes du dossier">
+                <li class="step active" data-step="1" role="listitem" aria-current="step">
+                    <span class="step-index">1</span>
+                    <span class="step-copy">
+                        <strong>Informations candidat</strong>
+                        <small>Identité</small>
+                    </span>
+                </li>
+                <li class="step" data-step="2" role="listitem">
+                    <span class="step-index">2</span>
+                    <span class="step-copy">
+                        <strong>Parcours académique</strong>
+                        <small>Formulaire</small>
+                    </span>
+                </li>
+                <li class="step" data-step="3" role="listitem">
+                    <span class="step-index">3</span>
+                    <span class="step-copy">
+                        <strong>Choix des filières</strong>
+                        <small>3 choix max</small>
+                    </span>
+                </li>
+                <li class="step" data-step="4" role="listitem">
+                    <span class="step-index">4</span>
+                    <span class="step-copy">
+                        <strong>Documents</strong>
+                        <small>Pièces jointes</small>
+                    </span>
+                </li>
+                <li class="step" data-step="5" role="listitem">
+                    <span class="step-index">5</span>
+                    <span class="step-copy">
+                        <strong>Review</strong>
+                        <small>Résumé</small>
+                    </span>
+                </li>
+                <li class="step" data-step="6" role="listitem">
+                    <span class="step-index">6</span>
+                    <span class="step-copy">
+                        <strong>Validation finale</strong>
+                        <small>Confirmation</small>
+                    </span>
+                </li>
+            </ol>
+        </header>
+
+        <main class="wizard-body">
+            <section class="wizard-step" data-step="1">
+                <div class="card wizard-card candidate-card">
+                    <div class="card-body">
+                        <div class="section-head">
+                            <div>
+                                <span class="section-kicker">Étape 1</span>
+                                <h2>Informations candidat</h2>
+                                <p class="section-description">Vos informations personnelles déjà enregistrées.</p>
+                            </div>
+                            <span class="section-badge">Profil candidat</span>
+                        </div>
+
+                        <div class="candidate-profile">
+                            <div class="candidate-avatar" aria-hidden="true">
+                                <span>@(string.IsNullOrWhiteSpace(Model.Prenom) ? "?" : Model.Prenom.Substring(0, 1).ToUpper())</span>
+                            </div>
+                            <div class="candidate-meta">
+                                <div class="candidate-name">@Model.Prenom @Model.Nom</div>
+                                <div class="candidate-identity">
+                                    <span class="identity-chip">CNE @Model.CNE</span>
+                                    <span class="identity-chip muted">Candidat inscrit</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 candidate-grid">
+                            <div class="col-md-6">
+                                <div class="info-tile">
+                                    <span class="info-label">Nom</span>
+                                    <strong>@Model.Nom</strong>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-tile">
+                                    <span class="info-label">Prénom</span>
+                                    <strong>@Model.Prenom</strong>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-tile">
+                                    <span class="info-label">CNE</span>
+                                    <strong class="mono">@Model.CNE</strong>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-tile">
+                                    <span class="info-label">Email</span>
+                                    <strong>@Model.Email</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wizard-step d-none" data-step="2">
+                <div class="card wizard-card">
+                    <div class="card-body">
+                        <div class="section-head">
+                            <div>
+                                <span class="section-kicker">Étape 2</span>
+                                <h2>Parcours académique</h2>
+                                <p class="section-description">Renseignez les données de scolarité demandées.</p>
+                            </div>
+                            <span class="section-badge">Formulaire</span>
+                        </div>
+
+                        <form id="parcoursForm" method="post" asp-controller="Inscription" asp-action="SaveParcours" class="wizard-form">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="dossierId" value="@Model.DossierId" />
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <div class="form-floating">
+                                        <input name="AnneeBac" type="number" class="form-control" id="AnneeBac" placeholder=" " value="@Model.Parcours?.AnneeBac" required min="1900" max="2100" />
+                                        <label for="AnneeBac">Année du Bac</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-floating">
+                                        <select name="SerieBacId" id="SerieBacId" class="form-select" required>
+                                            <option value="">Sélectionner une série</option>
+                                            @foreach (var serie in seriesBac)
+                                            {
+                                                <option value="@serie.Value" selected="@(Model.Parcours?.SerieBacId.ToString() == serie.Value)">
+                                                    @serie.Text
+                                                </option>
+                                            }
+                                        </select>
+                                        <label for="SerieBacId">Série du Bac</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-floating">
+                                        <select name="MentionId" id="MentionId" class="form-select" required>
+                                            <option value="">Sélectionner une mention</option>
+                                            @foreach (var mention in mentions)
+                                            {
+                                                <option value="@mention.Value" selected="@(Model.Parcours?.MentionId.ToString() == mention.Value)">
+                                                    @mention.Text
+                                                </option>
+                                            }
+                                        </select>
+                                        <label for="MentionId">Mention obtenue</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mt-2">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input name="NoteNationale" type="number" step="0.01" min="0" max="20" value="@Model.Parcours?.NoteNationale" class="form-control" id="NoteNationale" placeholder=" " />
+                                        <label for="NoteNationale">Note nationale</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input name="NoteRegionale" type="number" step="0.01" min="0" max="20" value="@Model.Parcours?.NoteRegionale" class="form-control" id="NoteRegionale" placeholder=" " />
+                                        <label for="NoteRegionale">Note régionale</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wizard-step d-none" data-step="3">
+                <div class="card wizard-card">
+                    <div class="card-body">
+                        <div class="section-head align-items-start flex-column flex-md-row">
+                            <div>
+                                <span class="section-kicker">Étape 3</span>
+                                <h2>Choisir vos filières</h2>
+                                <p class="section-description">Sélectionnez jusqu'à 3 filières et organisez vos préférences.</p>
+                            </div>
+                            <div class="choices-header">
+                                <div id="choicesCounter" class="choices-counter">0 / 3 filières sélectionnées</div>
+                                <button type="button" id="clearChoicesBtn" class="btn btn-soft btn-sm">Effacer la sélection</button>
+                            </div>
+                        </div>
+
+                        @if (!filieresDisponibles.Any())
+                        {
+                            <div class="alert alert-info mb-4" role="alert" aria-live="polite">
+                                <i class="bi bi-info-circle-fill me-2"></i>
+                                @InscriptionMessages.InfoNoFilieresAvailable
+                            </div>
+                        }
+
+                        <div class="row g-4">
+                            <div class="col-xl-8">
+                                <div class="row g-3 filieres-grid" id="filieresContainer">
+                                    @foreach (var filiere in filieresDisponibles)
+                                    {
+                                        <div class="col-md-6 col-xxl-4">
+                                            <div class="card filiere-card" draggable="false" data-id="@filiere.Id" data-name="@filiere.Nom" data-code="@filiere.Id" data-capacity="@filiere.Capacite" data-available="@(filiere.IsAvailable.ToString().ToLower())">
+                                                <div class="card-body">
+                                                    <div class="filiere-card-top">
+                                                        <span class="code-pill">Code @filiere.Id</span>
+                                                        <span class="status-pill @(filiere.IsAvailable ? "available" : "unavailable")">@(filiere.IsAvailable ? "Disponible" : "Complet")</span>
+                                                    </div>
+                                                    <h3 class="card-title">@filiere.Nom</h3>
+                                                    <div class="filiere-metrics">
+                                                        <div class="metric-row">
+                                                            <span>Capacité</span>
+                                                            <strong>@filiere.Capacite places</strong>
+                                                        </div>
+                                                        <div class="metric-row">
+                                                            <span>Ouverture</span>
+                                                            <strong>@filiere.DateDebutInscription.ToString("dd/MM/yyyy")</strong>
+                                                        </div>
+                                                        <div class="metric-row">
+                                                            <span>Disponibilité</span>
+                                                            <strong>@(filiere.IsAvailable ? "Ouverte" : "Fermée")</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filiere-footer">
+                                                        <button type="button" class="select-btn" aria-pressed="false">Sélectionner</button>
+                                                        <span class="selection-badge" aria-hidden="true"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <div class="card wizard-card sticky-panel">
+                                    <div class="card-body">
+                                        <div class="section-head compact">
+                                            <div>
+                                                <span class="section-kicker">Ordre de choix</span>
+                                                <h3>Vos choix classés</h3>
+                                            </div>
+                                            <span class="section-badge subtle">Drag &amp; drop</span>
+                                        </div>
+
+                                        <p class="choices-panel-hint">L'ordre de cette liste définit votre priorité d'inscription.</p>
+                                        <ul id="choicesList" class="choices-list" aria-live="polite">
+                                            <li class="choice-empty">@InscriptionMessages.InfoNoChoicesYet</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form id="choicesForm" method="post" action="/Candidat/Inscription/SaveChoix" class="d-none">
+                            <input type="hidden" name="dossierId" value="@Model.DossierId" />
+                            @Html.AntiForgeryToken()
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wizard-step d-none" data-step="4">
+                <div class="card wizard-card">
+                    <div class="card-body">
+                        <div class="section-head">
+                            <div>
+                                <span class="section-kicker">Étape 4</span>
+                                <h2>Documents</h2>
+                                <p class="section-description">Glissez-déposez vos pièces jointes ou sélectionnez-les manuellement.</p>
+                            </div>
+                            <span class="section-badge">Téléversement sécurisé</span>
+                        </div>
+
+                        <form id="docsForm" method="post" enctype="multipart/form-data" asp-controller="Inscription" asp-action="UploadDocuments" class="wizard-form">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="dossierId" value="@Model.DossierId" />
+
+                            <label id="fileDropZone" class="dropzone" for="docsInput">
+                                <span class="dropzone-icon" aria-hidden="true"><i class="bi bi-upload"></i></span>
+                                <strong>Déposez vos fichiers ici</strong>
+                                <span class="dropzone-copy">PDF, JPG, PNG ou documents scannés. La sélection reste modifiable.</span>
+                                <span class="dropzone-action">Cliquer pour parcourir</span>
+                                <input id="docsInput" type="file" name="files" multiple />
+                            </label>
+
+                            <div class="files-panel mt-3">
+                                <div class="files-panel-head">
+                                    <span>Fichiers sélectionnés</span>
+                                    <span id="docsCounter" class="files-counter">0 document</span>
+                                </div>
+                                <ul id="fileList" class="file-list">
+                                    <li class="file-empty">@InscriptionMessages.InfoNoDocumentsYet</li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wizard-step d-none" data-step="5">
+                <div class="card wizard-card">
+                    <div class="card-body">
+                        <div class="section-head">
+                            <div>
+                                <span class="section-kicker">Étape 5</span>
+                                <h2>Review</h2>
+                                <p class="section-description">Relisez le dossier complet avant la validation finale.</p>
+                            </div>
+                            <span class="section-badge">Résumé</span>
+                        </div>
+
+                        <div id="reviewArea" class="review-grid"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wizard-step d-none" data-step="6">
+                <div class="card wizard-card">
+                    <div class="card-body">
+                        <div class="section-head">
+                            <div>
+                                <span class="section-kicker">Étape 6</span>
+                                <h2>Validation finale</h2>
+                                <p class="section-description">Confirmez votre inscription lorsque tout est prêt.</p>
+                            </div>
+                            <span class="section-badge danger">Dernière étape</span>
+                        </div>
+
+                        <div class="final-confirmation">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="finalConfirmation" />
+                                <label class="form-check-label" for="finalConfirmation">
+                                    Je confirme que les informations saisies sont exactes et je souhaite valider le dossier.
+                                </label>
+                            </div>
+                            <p class="final-help wizard-help">Cette action lancera la validation finale de votre dossier.</p>
+                        </div>
+
+                        <form id="submitForm" method="post" asp-controller="Inscription" asp-action="Submit">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="dossierId" value="@Model.DossierId" />
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="wizard-footer">
+            <button id="prevBtn" type="button" class="btn btn-outline-secondary">Précédent</button>
+            <button id="nextBtn" type="button" class="btn btn-primary">Suivant</button>
+        </footer>
+    </div>
+</div>
+
+<div class="modal fade modal-confirm" id="submitConfirmModal" tabindex="-1" aria-labelledby="submitConfirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h5 class="modal-title" id="submitConfirmModalLabel">Confirmer la validation</h5>
+                    <p class="mb-0 text-muted">Cette étape transmettra votre dossier pour vérification.</p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-0">@InscriptionMessages.ConfirmSubmitDossier</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Annuler</button>
+                <button type="button" id="confirmSubmitBtn" class="btn btn-primary">Confirmer mon inscription</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        window.inscriptionMessages = @Html.Raw(JsonSerializer.Serialize(new
+        {
+            progressCreatingDossier = InscriptionMessages.ProgressCreatingDossier,
+            progressSaving = InscriptionMessages.ProgressSaving,
+            progressUploadingDocuments = InscriptionMessages.ProgressUploadingDocuments,
+            successParcoursSaved = InscriptionMessages.SuccessParcoursSaved,
+            successChoicesSaved = InscriptionMessages.SuccessChoicesSaved,
+            successDocumentsUploaded = InscriptionMessages.SuccessDocumentsUploaded,
+            successDossierSubmitted = InscriptionMessages.SuccessDossierSubmitted,
+            confirmSubmitDossier = InscriptionMessages.ConfirmSubmitDossier,
+            warningNoFilesSelected = InscriptionMessages.WarningNoFilesSelected,
+            infoNoDocumentsYet = InscriptionMessages.InfoNoDocumentsYet,
+            infoNoChoicesYet = InscriptionMessages.InfoNoChoicesYet,
+            warningMaxChoices = InscriptionMessages.WarningMaxChoices,
+            errorUnexpected = InscriptionMessages.ErrorUnexpected,
+            reviewTitle = "Review"
+        }, new JsonSerializerOptions(JsonSerializerDefaults.Web)));
+        window.inscriptionWizardState = @Html.Raw(ViewBag.WizardStateJson ?? "{}");
+    </script>
+    <script src="~/js/inscription.js"></script>
+}

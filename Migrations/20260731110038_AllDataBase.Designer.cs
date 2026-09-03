@@ -4,6 +4,7 @@ using InscriptionEtudiant.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InscriptionEtudiant.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260731110038_AllDataBase")]
+    partial class AllDataBase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -55,56 +58,6 @@ namespace InscriptionEtudiant.Migrations
                         .IsUnique();
 
                     b.ToTable("Administrateurs");
-                });
-
-            modelBuilder.Entity("InscriptionEtudiant.Models.Admission", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("AdministrateurId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ChoixFiliereId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Commentaire")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.Property<DateTime>("DateCreation")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETDATE()");
-
-                    b.Property<DateTime?>("DateDecision")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DateModification")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("DossierInscriptionId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal?>("Score")
-                        .HasPrecision(10, 2)
-                        .HasColumnType("decimal(10,2)");
-
-                    b.Property<int>("Statut")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AdministrateurId");
-
-                    b.HasIndex("ChoixFiliereId");
-
-                    b.HasIndex("DossierInscriptionId");
-
-                    b.ToTable("Admissions");
                 });
 
             modelBuilder.Entity("InscriptionEtudiant.Models.Candidat", b =>
@@ -231,9 +184,6 @@ namespace InscriptionEtudiant.Migrations
                     b.Property<DateTime>("DateDepot")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("FiliereAffecteeId")
-                        .HasColumnType("int");
-
                     b.Property<int>("StatutActuel")
                         .HasColumnType("int");
 
@@ -241,8 +191,6 @@ namespace InscriptionEtudiant.Migrations
 
                     b.HasIndex("CandidatId")
                         .IsUnique();
-
-                    b.HasIndex("FiliereAffecteeId");
 
                     b.ToTable("DossierInscriptions");
                 });
@@ -391,32 +339,6 @@ namespace InscriptionEtudiant.Migrations
                     b.ToTable("SerieBacs");
                 });
 
-            modelBuilder.Entity("InscriptionEtudiant.Models.Admission", b =>
-                {
-                    b.HasOne("InscriptionEtudiant.Models.Administrateur", "Administrateur")
-                        .WithMany()
-                        .HasForeignKey("AdministrateurId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.HasOne("InscriptionEtudiant.Models.ChoixFiliere", "ChoixFiliere")
-                        .WithMany()
-                        .HasForeignKey("ChoixFiliereId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("InscriptionEtudiant.Models.DossierInscription", "DossierInscription")
-                        .WithMany()
-                        .HasForeignKey("DossierInscriptionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Administrateur");
-
-                    b.Navigation("ChoixFiliere");
-
-                    b.Navigation("DossierInscription");
-                });
-
             modelBuilder.Entity("InscriptionEtudiant.Models.ChoixFiliere", b =>
                 {
                     b.HasOne("InscriptionEtudiant.Models.DossierInscription", "DossierInscription")
@@ -455,13 +377,7 @@ namespace InscriptionEtudiant.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("InscriptionEtudiant.Models.Filiere", "FiliereAffectee")
-                        .WithMany()
-                        .HasForeignKey("FiliereAffecteeId");
-
                     b.Navigation("Candidat");
-
-                    b.Navigation("FiliereAffectee");
                 });
 
             modelBuilder.Entity("InscriptionEtudiant.Models.HistoriqueStatut", b =>

@@ -1,0 +1,38 @@
+/* sidebar.css - styles for the admin sidebar */
+.admin-sidebar {
+  width: 260px;
+  min-width: 260px;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background: var(--card-bg, #fff);
+  border-right: 1px solid rgba(0,0,0,0.04);
+  transition: transform 0.28s ease-in-out, width 0.28s ease-in-out;
+}
+
+.admin-sidebar .sidebar-header { border-bottom: 1px solid rgba(0,0,0,0.04); }
+.admin-sidebar .nav-link { color: #333; }
+.admin-sidebar .nav-link.active, .admin-sidebar .nav-link:hover { background: rgba(13,110,253,0.06); color: var(--accent); }
+
+/* collapsed state */
+.admin-sidebar.collapsed { transform: translateX(-100%); width: 0; min-width: 0; }
+
+@media (max-width: 767.98px) {
+  .admin-sidebar { position: fixed; z-index: 1045; }
+}
+
+/* submenu styling */
+.admin-sidebar .submenu-toggle { cursor: pointer; }
+.admin-sidebar .submenu-toggle .bi-chevron-down { transition: transform 0.25s ease; }
+.admin-sidebar .collapse.show + .nav, .admin-sidebar .collapse.show { }
+.admin-sidebar .collapse.show ~ .submenu-toggle .bi-chevron-down { transform: rotate(180deg); }
+
+/* slightly rounded items */
+.admin-sidebar .nav-link { border-radius: .5rem; }
+
+/* ensure sidebar footer stays at bottom */
+.admin-sidebar .mt-auto { margin-top: auto; }
+

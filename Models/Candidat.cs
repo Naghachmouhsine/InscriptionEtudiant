@@ -31,5 +31,8 @@ namespace InscriptionEtudiant.Models
         [Phone]
         [StringLength(20)]
         public string Telephone { get; set; } = string.Empty;
+
+        // One-to-one relation: a candidat has one dossier inscription
+        public DossierInscription? DossierInscription { get; set; }
     }
 }

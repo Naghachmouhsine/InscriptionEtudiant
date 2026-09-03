@@ -1,0 +1,295 @@
+@model InscriptionEtudiant.ViewModels.Admin.AdminDossierDetailsViewModel
+
+
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Détail du dossier";
+}
+
+<div class="container-fluid my-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="mb-0">Dossier étudiant</h2>
+        <a class="btn btn-outline-secondary" href="@Url.Action("Index", "Dossiers")"><i class="bi bi-arrow-left"></i> Retour à la liste</a>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Etudiant.Nom @Model.Etudiant.Prenom</h5>
+                    <p class="mb-1"><strong>CNE:</strong> @Model.Etudiant.CNE</p>
+                    <p class="mb-1"><strong>Email:</strong> @Model.Etudiant.Email</p>
+                    <p class="mb-1"><strong>Statut actuel:</strong> <span class="badge bg-primary">@Model.StatutLibelle</span></p>
+                    <p class="mb-0"><strong>Date dépôt:</strong> @Model.DateDepot.ToString("yyyy-MM-dd")</p>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h6>Actions administrateur</h6>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#changerStatutModal" data-statut="Accepte">Accepter</button>
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#changerStatutModal" data-statut="Refuse">Refuser</button>
+                        <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#changerStatutModal" data-statut="Incomplet">Demander modification</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5>Informations personnelles</h5>
+                    <dl class="row">
+                        <dt class="col-sm-3">Nom complet</dt>
+                        <dd class="col-sm-9">@Model.Etudiant.Nom @Model.Etudiant.Prenom</dd>
+
+                        <dt class="col-sm-3">CNE</dt>
+                        <dd class="col-sm-9">@Model.Etudiant.CNE</dd>
+
+                        <dt class="col-sm-3">Email</dt>
+                        <dd class="col-sm-9">@Model.Etudiant.Email</dd>
+                        <dt class="col-sm-3">Téléphone</dt>
+                        <dd class="col-sm-9">@Model.Etudiant.Telephone</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5>Parcours académique</h5>
+                    @if (Model.Parcours != null)
+                    {
+                        <dl class="row mb-0">
+                            <dt class="col-sm-4">Année Bac</dt>
+                            <dd class="col-sm-8">@Model.Parcours.AnneeBac</dd>
+
+                            <dt class="col-sm-4">Note nationale</dt>
+                            <dd class="col-sm-8">@Model.Parcours.NoteNationale</dd>
+
+                            <dt class="col-sm-4">Série Bac</dt>
+                            <dd class="col-sm-8">@Model.Parcours.SerieBac</dd>
+
+                            <dt class="col-sm-4">Mention</dt>
+                            <dd class="col-sm-8">@Model.Parcours.Mention</dd>
+                        </dl>
+                    }
+                    else
+                    {
+                        <p class="mb-0">Aucun parcours enregistré.</p>
+                    }
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5>Choix des filières</h5>
+                    @if (Model.ChoixFilieres?.Any() == true)
+                    {
+                        <ol>
+                            @foreach (var c in Model.ChoixFilieres.OrderBy(x => x.OrdreChoix))
+                            {
+                                <li>@c.FiliereNom</li>
+                            }
+                        </ol>
+                    }
+                    else
+                    {
+                        <p>Aucun choix enregistré.</p>
+                    }
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5>Documents</h5>
+                    @if (Model.Documents?.Any() == true)
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Type document</th>
+                                        <th>Nom fichier</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var d in Model.Documents)
+                                    {
+                                        <tr>
+                                            <td>@d.TypeDocument</td>
+                                            <td>@d.NomFichier</td>
+                                            <td>
+                                                <a class="btn btn-sm btn-outline-primary"
+                                                   href="@Url.Content("~/" + d.Chemin)"
+                                                   target="_blank">
+                                                    <i class="bi bi-file-earmark-text"></i> Consulter
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Aucun document disponible.</p>
+                    }
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5>Historique traitement</h5>
+                    @if (Model.Historique?.Any() == true)
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Ancien statut</th>
+                                        <th>Nouveau statut</th>
+                                        <th>Commentaire</th>
+                                        <th>Administrateur</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var h in Model.Historique)
+                                    {
+                                        <tr>
+                                            <td>@h.AncienStatutLibelle</td>
+                                            <td>@h.NouveauStatutLibelle</td>
+                                            <td>@h.Commentaire</td>
+                                            <td>@h.Administrateur</td>
+                                            <td>@h.DateChangement.ToString("yyyy-MM-dd HH:mm")</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Aucun historique.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal changer statut -->
+<div class="modal fade" id="changerStatutModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" action="@Url.Action("ChangerStatut", "Dossiers")">
+                @Html.AntiForgeryToken()
+                <div class="modal-header">
+                    <h5 class="modal-title">Changer le statut</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="DossierId" value="@Model.Id" />
+                    <input type="hidden" id="nouveauStatut" name="NouveauStatut" value="" />
+
+                    <div id="acceptSection" class="mb-3" style="display:none;">
+                        <label class="form-label">Sélectionner la filière d'affectation (obligatoire)</label>
+                        <div class="list-group">
+                            @if (Model.ChoixFilieres?.Any() == true)
+                            {
+                                foreach (var choix in Model.ChoixFilieres.OrderBy(c => c.OrdreChoix))
+                                {
+                                    <label class="list-group-item d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="radio" name="FiliereAffecteeId" value="@choix.FiliereId" />
+                                        <div>
+                                            <div class="fw-semibold">@choix.FiliereNom</div>
+                                            <small class="text-muted">Choix n°@choix.OrdreChoix</small>
+                                        </div>
+                                    </label>
+                                }
+                            }
+                            else
+                            {
+                                <div class="text-muted">Aucun choix disponible.</div>
+                            }
+                        </div>
+                    </div>
+
+                    <div id="commonSection">
+                        <div class="mb-3">
+                            <label class="form-label">Commentaire</label>
+                            <textarea id="commentaire" name="Commentaire" class="form-control" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget;
+        var statut = button.getAttribute('data-statut');
+        var hiddenStatut = document.getElementById('nouveauStatut');
+        var acceptSection = document.getElementById('acceptSection');
+        var commentaire = document.getElementById('commentaire');
+
+        if (hiddenStatut && statut) {
+            hiddenStatut.value = statut;
+        }
+
+        if (acceptSection) {
+            if (statut === 'Accepte') {
+                acceptSection.style.display = 'block';
+            } else {
+                acceptSection.style.display = 'none';
+            }
+        }
+    });
+
+    // Validate before submit
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.querySelector('#changerStatutModal form');
+        if (!form) return;
+
+        form.addEventListener('submit', function (e) {
+            var statut = document.getElementById('nouveauStatut')?.value;
+            if (statut === 'Accepte') {
+                var selected = form.querySelector('input[name="FiliereAffecteeId"]:checked');
+                if (!selected) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    var alertDiv = document.createElement('div');
+                    alertDiv.className = 'alert alert-danger';
+                    alertDiv.textContent = 'Veuillez sélectionner la filière d\'affectation.';
+                    var modalBody = form.querySelector('.modal-body');
+                    if (modalBody) {
+                        // remove previous alerts
+                        var prev = modalBody.querySelector('.alert');
+                        if (prev) prev.remove();
+                        modalBody.insertBefore(alertDiv, modalBody.firstChild);
+                    }
+                    return false;
+                }
+            }
+        });
+    });
+</script>

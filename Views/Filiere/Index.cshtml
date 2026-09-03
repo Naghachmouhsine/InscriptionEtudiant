@@ -1,0 +1,88 @@
+@model IEnumerable<InscriptionEtudiant.Models.Filiere>
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Filières";
+    var search = ViewData["Search"] as string ?? string.Empty;
+}
+
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+            <h3 class="mb-0">Filières</h3>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">Administration</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Filières</li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="d-flex gap-2">
+            <a class="btn btn-primary btn-sm" asp-action="Create">Nouvelle filière</a>
+        </div>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+
+    <div class="card card-rounded shadow-sm">
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <input id="searchInput" value="@search" class="form-control" placeholder="Rechercher par nom ou description" />
+                </div>
+                <div class="col-md-6 text-end">
+                    <button id="searchBtn" class="btn btn-outline-secondary btn-sm">Rechercher</button>
+                    <button id="clearBtn" class="btn btn-outline-secondary btn-sm">Effacer</button>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Id</th>
+                            <th>Nom</th>
+                            <th>Description</th>
+                            <th>Capacité</th>
+                            <th>Début inscription</th>
+                            <th>Fin inscription</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Nom</td>
+                                <td>@item.Description</td>
+                                <td>@item.Capacite</td>
+                                <td>@item.DateDebutInscription.ToString("yyyy-MM-dd")</td>
+                                <td>@item.DateFinInscription.ToString("yyyy-MM-dd")</td>
+                                <td>
+                                    <a class="btn btn-sm btn-outline-primary me-1" asp-action="Edit" asp-route-id="@item.Id">Modifier</a>
+
+                                    <form class="d-inline" method="post" asp-action="Delete" onsubmit="return confirmDelete(this)">
+                                        <input type="hidden" name="id" value="@item.Id" />
+                                        <button type="submit" class="btn btn-sm btn-outline-danger">Supprimer</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/filiere.js"></script>
+}

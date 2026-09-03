@@ -1,0 +1,384 @@
+{
+  "communities": {
+    "0": [
+      "csharp_namespace:51d43ece672ba51b",
+      "migration",
+      "migrations_20260730143534_initialcreate",
+      "migrations_20260730143534_initialcreate_cs_migrationbuilder",
+      "migrations_20260730143534_initialcreate_designer",
+      "migrations_20260730143534_initialcreate_designer_cs_modelbuilder",
+      "migrations_20260730143534_initialcreate_designer_inscriptionetudiant_migrations_initialcreate",
+      "migrations_20260730143534_initialcreate_designer_inscriptionetudiant_migrations_initialcreate_buildtargetmodel",
+      "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate",
+      "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate_down",
+      "migrations_20260730143534_initialcreate_inscriptionetudiant_migrations_initialcreate_up",
+      "migrations_20260730203152_filiermigration",
+      "migrations_20260730203152_filiermigration_cs_migrationbuilder",
+      "migrations_20260730203152_filiermigration_designer",
+      "migrations_20260730203152_filiermigration_designer_cs_modelbuilder",
+      "migrations_20260730203152_filiermigration_designer_inscriptionetudiant_migrations_filiermigration",
+      "migrations_20260730203152_filiermigration_designer_inscriptionetudiant_migrations_filiermigration_buildtargetmodel",
+      "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration",
+      "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration_down",
+      "migrations_20260730203152_filiermigration_inscriptionetudiant_migrations_filiermigration_up",
+      "migrations_applicationdbcontextmodelsnapshot",
+      "migrations_applicationdbcontextmodelsnapshot_cs_modelbuilder",
+      "migrations_applicationdbcontextmodelsnapshot_inscriptionetudiant_migrations_applicationdbcontextmodelsnapshot",
+      "migrations_applicationdbcontextmodelsnapshot_inscriptionetudiant_migrations_applicationdbcontextmodelsnapshot_buildmodel",
+      "models_filiere",
+      "modelsnapshot",
+      "system",
+      "views_shared_adminsidebar"
+    ],
+    "1": [
+      "data_applicationdbcontext_cs_modelbuilder",
+      "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext",
+      "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext_onmodelcreating",
+      "dbcontext",
+      "dbset",
+      "models_administrateur",
+      "models_administrateur_inscriptionetudiant_models_administrateur",
+      "models_candidat",
+      "models_candidat_inscriptionetudiant_models_candidat",
+      "services_authservice_cs_task",
+      "services_authservice_inscriptionetudiant_services_authservice",
+      "services_authservice_inscriptionetudiant_services_authservice_hashpassword",
+      "services_authservice_inscriptionetudiant_services_authservice_loginadmin",
+      "services_authservice_inscriptionetudiant_services_authservice_logincandidat",
+      "services_authservice_inscriptionetudiant_services_authservice_registercandidat",
+      "services_authservice_inscriptionetudiant_services_authservice_verifypassword",
+      "services_authserviceint",
+      "services_authserviceint_cs_task",
+      "services_authserviceint_inscriptionetudiant_services_authserviceint",
+      "services_authserviceint_inscriptionetudiant_services_authserviceint_loginadmin",
+      "services_authserviceint_inscriptionetudiant_services_authserviceint_logincandidat",
+      "services_authserviceint_inscriptionetudiant_services_authserviceint_registercandidat",
+      "viewmodels_loginviewmodel",
+      "viewmodels_loginviewmodel_inscriptionetudiant_viewmodels_loginviewmodel",
+      "viewmodels_registerviewmodel",
+      "viewmodels_registerviewmodel_inscriptionetudiant_viewmodels_registerviewmodel"
+    ],
+    "2": [
+      "controllers_admin_filierecontroller_cs_httpget",
+      "controllers_admin_filierecontroller_cs_httppost",
+      "controllers_admin_filierecontroller_cs_iactionresult",
+      "controllers_admin_filierecontroller_cs_task",
+      "controllers_admin_filierecontroller_cs_validateantiforgerytoken",
+      "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller",
+      "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_create",
+      "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_delete",
+      "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_edit",
+      "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller_index",
+      "models_filiere_cs_datetime",
+      "models_filiere_inscriptionetudiant_models_filiere",
+      "services_interfaces_ifiliereservice_cs_ienumerable",
+      "services_interfaces_ifiliereservice_cs_task",
+      "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice",
+      "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_createasync",
+      "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_deleteasync",
+      "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_existsasync",
+      "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_getallasync",
+      "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_getbyidasync",
+      "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice_updateasync"
+    ],
+    "3": [
+      "controllers_admin_filierecontroller",
+      "controllers_authcontroller",
+      "controllers_candidatcontroller",
+      "csharp_namespace:48954b253b1b8b54",
+      "csharp_namespace:83230034683a1d25",
+      "csharp_namespace:9a3df721a12ee86a",
+      "csharp_namespace:c60888646c7b28e1",
+      "csharp_namespace:d53ed6b6d48bbb5b",
+      "csharp_namespace:fc211e59efed416e",
+      "data_applicationdbcontext",
+      "models_errorviewmodel",
+      "models_errorviewmodel_inscriptionetudiant_models_errorviewmodel",
+      "program",
+      "services_authservice",
+      "services_filiereservice",
+      "services_interfaces_ifiliereservice"
+    ],
+    "4": [
+      "properties_launchsettings",
+      "properties_launchsettings_environmentvariables_aspnetcore_environment",
+      "properties_launchsettings_http_applicationurl",
+      "properties_launchsettings_http_commandname",
+      "properties_launchsettings_http_dotnetrunmessages",
+      "properties_launchsettings_http_environmentvariables",
+      "properties_launchsettings_http_launchbrowser",
+      "properties_launchsettings_https_applicationurl",
+      "properties_launchsettings_https_commandname",
+      "properties_launchsettings_https_dotnetrunmessages",
+      "properties_launchsettings_https_environmentvariables",
+      "properties_launchsettings_https_launchbrowser",
+      "properties_launchsettings_profiles",
+      "properties_launchsettings_profiles_http",
+      "properties_launchsettings_profiles_https",
+      "properties_launchsettings_schema"
+    ],
+    "5": [
+      "controllers_authcontroller_cs_httpget",
+      "controllers_authcontroller_cs_httppost",
+      "controllers_authcontroller_cs_iactionresult",
+      "controllers_authcontroller_cs_task",
+      "controllers_authcontroller_cs_validateantiforgerytoken",
+      "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller",
+      "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_createauthenticationcookie",
+      "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_login",
+      "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_logout",
+      "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller_register"
+    ],
+    "6": [
+      "controller",
+      "controllers_admin_admincontroller",
+      "controllers_admin_admincontroller_cs_iactionresult",
+      "controllers_admin_admincontroller_inscriptionetudiant_controllers_admin_admincontroller",
+      "controllers_admin_admincontroller_inscriptionetudiant_controllers_admin_admincontroller_index",
+      "controllers_candidatcontroller_cs_iactionresult",
+      "controllers_candidatcontroller_inscriptionetudiant_controllers_candidatcontroller",
+      "controllers_candidatcontroller_inscriptionetudiant_controllers_candidatcontroller_index",
+      "csharp_namespace:646b4130d620592e"
+    ],
+    "7": [
+      "services_filiereservice_cs_ienumerable",
+      "services_filiereservice_cs_task",
+      "services_filiereservice_inscriptionetudiant_services_filiereservice",
+      "services_filiereservice_inscriptionetudiant_services_filiereservice_createasync",
+      "services_filiereservice_inscriptionetudiant_services_filiereservice_deleteasync",
+      "services_filiereservice_inscriptionetudiant_services_filiereservice_existsasync",
+      "services_filiereservice_inscriptionetudiant_services_filiereservice_getallasync",
+      "services_filiereservice_inscriptionetudiant_services_filiereservice_getbyidasync",
+      "services_filiereservice_inscriptionetudiant_services_filiereservice_updateasync"
+    ],
+    "8": [
+      "ivalidatableobject",
+      "validationcontext",
+      "validationresult",
+      "viewmodels_filiereformviewmodel",
+      "viewmodels_filiereformviewmodel_cs_datetime",
+      "viewmodels_filiereformviewmodel_cs_ienumerable",
+      "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel",
+      "viewmodels_filiereformviewmodel_inscriptionetudiant_viewmodels_filiereformviewmodel_validate"
+    ],
+    "9": [
+      "framework_net10_0",
+      "inscriptionetudiant_csproj_inscriptionetudiant",
+      "nuget_microsoft_entityframeworkcore_design",
+      "nuget_microsoft_entityframeworkcore_sqlserver",
+      "nuget_microsoft_entityframeworkcore_tools",
+      "sdk_microsoft_net_sdk_web"
+    ],
+    "10": [
+      "wwwroot_js_filiere",
+      "wwwroot_js_filiere_confirmdelete",
+      "wwwroot_js_filiere_validatefiliereform"
+    ],
+    "11": [
+      "ienumerable_inscriptionetudiant_models_filiere",
+      "views_filiere_index"
+    ],
+    "12": [
+      "inscriptionetudiant_models",
+      "views_viewimports"
+    ],
+    "13": [
+      "inscriptionetudiant_viewmodels_filiereformviewmodel",
+      "views_filiere_form"
+    ],
+    "14": [
+      "wwwroot_js_sidebar",
+      "wwwroot_js_sidebar_togglesidebar"
+    ],
+    "15": [
+      "inscriptionetudiant_slnx_inscriptionetudiant"
+    ],
+    "16": [
+      "views_admin_index"
+    ],
+    "17": [
+      "views_auth_login"
+    ],
+    "18": [
+      "views_auth_register"
+    ],
+    "19": [
+      "views_candidat_index"
+    ],
+    "20": [
+      "views_shared_adminlayout"
+    ],
+    "21": [
+      "views_shared_adminnavbar"
+    ],
+    "22": [
+      "views_shared_candidatlayout"
+    ],
+    "23": [
+      "views_shared_candidatsidebar"
+    ],
+    "24": [
+      "views_shared_error"
+    ],
+    "25": [
+      "views_shared_layout"
+    ],
+    "26": [
+      "views_shared_validationscriptspartial"
+    ],
+    "27": [
+      "views_viewstart"
+    ],
+    "28": [
+      "wwwroot_js_auth"
+    ],
+    "29": [
+      "wwwroot_js_site"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08465608465608465,
+    "1": 0.12307692307692308,
+    "2": 0.21428571428571427,
+    "3": 0.2,
+    "4": 0.13333333333333333,
+    "5": 0.4222222222222222,
+    "6": 0.2222222222222222,
+    "7": 0.3611111111111111,
+    "8": 0.25,
+    "9": 0.3333333333333333,
+    "10": 0.6666666666666666,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0
+  },
+  "gods": [
+    {
+      "id": "csharp_namespace:9a3df721a12ee86a",
+      "label": "InscriptionEtudiant.Models",
+      "degree": 11
+    },
+    {
+      "id": "models_filiere_inscriptionetudiant_models_filiere",
+      "label": "Filiere",
+      "degree": 11
+    },
+    {
+      "id": "services_filiereservice_inscriptionetudiant_services_filiereservice",
+      "label": "FiliereService",
+      "degree": 9
+    },
+    {
+      "id": "services_interfaces_ifiliereservice_inscriptionetudiant_services_interfaces_ifiliereservice",
+      "label": "IFiliereService",
+      "degree": 9
+    },
+    {
+      "id": "data_applicationdbcontext_inscriptionetudiant_data_applicationdbcontext",
+      "label": "ApplicationDbContext",
+      "degree": 9
+    },
+    {
+      "id": "services_authservice_inscriptionetudiant_services_authservice",
+      "label": "AuthService",
+      "degree": 8
+    },
+    {
+      "id": "controllers_admin_filierecontroller_inscriptionetudiant_controllers_admin_filierecontroller",
+      "label": "FiliereController",
+      "degree": 7
+    },
+    {
+      "id": "controllers_authcontroller_inscriptionetudiant_controllers_authcontroller",
+      "label": "AuthController",
+      "degree": 7
+    },
+    {
+      "id": "csharp_namespace:c60888646c7b28e1",
+      "label": "InscriptionEtudiant.ViewModels",
+      "degree": 7
+    },
+    {
+      "id": "system",
+      "label": "System",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "AuthController",
+      "target": "AuthServiceInt",
+      "source_files": [
+        "Controllers/AuthController.cs",
+        "Services/AuthServiceInt.cs"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "ApplicationDbContext",
+      "target": "Filiere",
+      "source_files": [
+        "data/ApplicationDbContext.cs",
+        "Models/Filiere.cs"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "FiliereService",
+      "target": "ApplicationDbContext",
+      "source_files": [
+        "Services/FiliereService.cs",
+        "data/ApplicationDbContext.cs"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "FiliereController",
+      "target": "IFiliereService",
+      "source_files": [
+        "Controllers/Admin/FiliereController.cs",
+        "Services/Interfaces/IFiliereService.cs"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "ApplicationDbContext",
+      "target": "Administrateur",
+      "source_files": [
+        "data/ApplicationDbContext.cs",
+        "Models/Administrateur.cs"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

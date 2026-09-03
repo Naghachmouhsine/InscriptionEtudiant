@@ -1,0 +1,243 @@
+﻿@model InscriptionEtudiant.ViewModels.RegisterViewModel
+
+
+@{
+    ViewData["Title"] = "Créer un compte";
+}
+
+
+<link rel="stylesheet" href="~/css/auth.css" />
+
+<script src="~/js/auth.js"></script>
+
+<div class="auth-container">
+
+
+    <div class="auth-card register-card">
+
+
+        <div class="auth-header">
+
+            <div class="logo">
+                🎓
+            </div>
+
+
+            <h2>
+                Créer un compte
+            </h2>
+
+
+            <p>
+                Inscription candidat
+            </p>
+
+
+        </div>
+
+
+
+
+        <form asp-action="Register" method="post">
+
+
+            <div asp-validation-summary="ModelOnly" class="text-danger">
+            </div>
+
+
+
+            <div class="row">
+
+
+                <div class="col-md-6 form-group">
+
+                    <label>
+                        <i class="bi bi-person-vcard"></i>
+                        CNE
+                    </label>
+
+
+                    <input asp-for="CNE" class="form-control"
+       placeholder="Ex : P123456789" />
+
+
+                </div>
+
+
+
+                <div class="col-md-6 form-group">
+
+                  
+                    <label>
+                        <i class="bi bi-telephone"></i>
+                        Téléphone
+                    </label>
+
+                <input asp-for="Telephone"
+       class="form-control"
+       placeholder="06 XX XX XX XX" />
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="row">
+
+
+                <div class="col-md-6 form-group">
+
+                  
+                    <label>
+                        <i class="bi bi-person"></i>
+                        Nom
+                    </label>
+
+
+
+
+                  
+<input asp-for="Nom"
+       class="form-control"
+       placeholder="Votre nom" />
+
+
+
+                </div>
+
+
+
+                <div class="col-md-6 form-group">
+
+                    <label>
+                        <i class="bi bi-person"></i>
+                        Prénom
+                    </label>
+
+
+
+                <input asp-for="Prenom"
+       class="form-control"
+       placeholder="Votre prénom" />
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <div class="form-group">
+
+                <label>
+                    <i class="bi bi-envelope"></i>
+                    Adresse e-mail
+                </label>
+
+              <input asp-for="Email"
+       class="form-control"
+       placeholder="exemple@email.com" />
+
+            </div>
+
+
+
+
+
+            <div class="row">
+
+
+                <div class="col-md-6 form-group">
+
+                    <label>
+                        <i class="bi bi-shield-lock"></i>
+                        Mot passe
+                    </label>
+                  
+                   
+<input asp-for="Password"
+       class="form-control"
+       placeholder="Minimum 8 caractères" />
+
+
+               
+
+
+                </div>
+
+
+
+
+                <div class="col-md-6 form-group">
+
+                    <label>
+                        <i class="bi bi-shield-lock"></i>
+                        Confirmation
+                    </label>
+
+
+                 
+<input asp-for="ConfirmPassword"
+       class="form-control"
+       placeholder="Répéter le mot de passe" />
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <button class="btn-auth">
+
+                Créer mon compte
+
+            </button>
+
+
+
+        </form>
+
+
+
+        <div class="auth-footer">
+
+            <p>
+                Vous avez déjà un compte ?
+            </p>
+
+
+            <a asp-action="Login">
+                Se connecter
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+@section Scripts {
+
+    <partial name="_ValidationScriptsPartial" />
+
+}

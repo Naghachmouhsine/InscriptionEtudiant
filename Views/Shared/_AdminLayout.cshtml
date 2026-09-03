@@ -1,0 +1,47 @@
+@* Admin layout - uses Bootstrap 5, Bootstrap Icons, and native JS only. No business logic here. *@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Admin</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/sidebar.css" asp-append-version="true" />
+
+    @RenderSection("Styles", required: false)
+</head>
+<body class="bg-light">
+    <div class="admin-shell d-flex">
+
+        <div class="admin-sidebar-container">
+            <partial name="_AdminSidebar" />
+        </div>
+
+        <div class="admin-main flex-grow-1 d-flex flex-column min-vh-100">
+            <partial name="_AdminNavbar" />
+
+            <main class="p-4 flex-grow-1">
+                @RenderBody()
+            </main>
+
+            <footer class="border-top bg-white py-3 text-center small">
+                <div class="container">&copy; @DateTime.Now.Year - InscriptionEtudiant - Administration</div>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/sidebar.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

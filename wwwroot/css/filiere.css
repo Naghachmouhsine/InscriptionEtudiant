@@ -1,0 +1,11 @@
+/* Styles specific to filiere module */
+.card-rounded { border-radius: .75rem; }
+
+.table-hover tbody tr:hover { transform: translateY(-2px); transition: transform .15s ease; }
+
+.breadcrumb { background: transparent; padding: 0; }
+
+/* small responsive tweaks */
+@media (max-width: 767.98px) {
+  .card-body { padding: .75rem; }
+}

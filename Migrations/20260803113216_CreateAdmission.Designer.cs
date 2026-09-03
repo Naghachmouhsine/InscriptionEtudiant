@@ -4,6 +4,7 @@ using InscriptionEtudiant.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InscriptionEtudiant.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260803113216_CreateAdmission")]
+    partial class CreateAdmission
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -231,9 +234,6 @@ namespace InscriptionEtudiant.Migrations
                     b.Property<DateTime>("DateDepot")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("FiliereAffecteeId")
-                        .HasColumnType("int");
-
                     b.Property<int>("StatutActuel")
                         .HasColumnType("int");
 
@@ -241,8 +241,6 @@ namespace InscriptionEtudiant.Migrations
 
                     b.HasIndex("CandidatId")
                         .IsUnique();
-
-                    b.HasIndex("FiliereAffecteeId");
 
                     b.ToTable("DossierInscriptions");
                 });
@@ -455,13 +453,7 @@ namespace InscriptionEtudiant.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("InscriptionEtudiant.Models.Filiere", "FiliereAffectee")
-                        .WithMany()
-                        .HasForeignKey("FiliereAffecteeId");
-
                     b.Navigation("Candidat");
-
-                    b.Navigation("FiliereAffectee");
                 });
 
             modelBuilder.Entity("InscriptionEtudiant.Models.HistoriqueStatut", b =>

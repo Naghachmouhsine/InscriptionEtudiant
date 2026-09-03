@@ -1,0 +1,25 @@
+@* Reusable admin navbar - no business logic here *@
+<nav class="admin-navbar navbar navbar-expand navbar-light bg-white border-bottom shadow-sm px-3">
+    <div class="container-fluid">
+        <button class="btn btn-outline-secondary d-md-none me-2" id="sidebarToggleBtn" aria-label="Toggle sidebar">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <a class="navbar-brand d-none d-md-inline" asp-area="" asp-controller="Admin" asp-action="Index">Administration</a>
+
+        <div class="ms-auto d-flex align-items-center">
+            <div class="me-3 d-none d-md-block text-muted small">Hello, Admin</div>
+
+            <div class="dropdown">
+                <a class="d-flex align-items-center text-decoration-none dropdown-toggle" href="#" id="adminMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://via.placeholder.com/32" alt="avatar" class="rounded-circle me-2" />
+                    <span class="d-none d-md-inline">Admin</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="adminMenuLink">
+                    <li><a class="dropdown-item" asp-controller="Admin" asp-action="Profile">Profile</a></li>
+                    <li><a class="dropdown-item" asp-controller="Auth" asp-action="Logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

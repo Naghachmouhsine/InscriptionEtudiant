@@ -1,0 +1,210 @@
+@model InscriptionEtudiant.ViewModels.DashboardEtudiantViewModel
+@{
+    Layout = "_CandidatLayout";
+    ViewData["Title"] = "Mon dossier d'inscription";
+    var dossier = Model.Dossier;
+}
+
+<link rel="stylesheet" href="~/css/globale.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/candidat-dashboard.css" asp-append-version="true" />
+
+<div class="dashboard-header mb-4">
+    <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-md-between gap-3">
+        <div>
+            <p class="text-muted mb-1">Bonjour <strong>@dossier.NomCompletEtudiant</strong></p>
+            <h2 class="h4 mb-0 fw-bold">Mon dossier d'inscription</h2>
+        </div>
+        <div class="text-md-end">
+            <span class="d-block text-muted small mb-1">Statut actuel</span>
+            <span class="badge statut-badge @dossier.StatutBadgeClass">@dossier.StatutLibelle</span>
+        </div>
+    </div>
+</div>
+
+@if (!dossier.AUnDossier)
+{
+    <div class="dashboard-card mb-4">
+        <div class="empty-state">
+            <i class="bi bi-folder-plus d-block"></i>
+            <h5 class="fw-semibold text-dark">Aucun dossier déposé</h5>
+            <p class="mb-3">Commencez votre inscription pour créer votre dossier.</p>
+            <a class="btn btn-primary" asp-controller="Inscription" asp-action="Index">
+                <i class="bi bi-journal-plus me-1"></i> Créer mon dossier
+            </a>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <section class="dashboard-card mb-4">
+                <h3 class="h5 fw-bold mb-4">
+                    <i class="bi bi-file-earmark-text me-2 text-primary"></i>Résumé du dossier
+                </h3>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-sm-6">
+                        <div class="info-tile">
+                            <div class="info-tile-label">Numéro dossier</div>
+                            <div class="info-tile-value">#@dossier.Id.ToString("D6")</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="info-tile">
+                            <div class="info-tile-label">Date dépôt</div>
+                            <div class="info-tile-value">@dossier.DateDepot?.ToString("dd/MM/yyyy HH:mm")</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="info-tile">
+                            <div class="info-tile-label">CNE</div>
+                            <div class="info-tile-value">@dossier.CNE</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="info-tile">
+                            <div class="info-tile-label">Email</div>
+                            <div class="info-tile-value">@dossier.Email</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="info-tile">
+                            <div class="info-tile-label">Téléphone</div>
+                            <div class="info-tile-value">@dossier.Telephone</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="info-tile">
+                            <div class="info-tile-label">Documents déposés</div>
+                            <div class="info-tile-value">@dossier.NombreDocuments</div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="info-tile">
+                            <div class="info-tile-label">Choix 1</div>
+                            <div class="info-tile-value">@(dossier.Filiere1 ?? "—")</div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="info-tile">
+                            <div class="info-tile-label">Choix 2</div>
+                            <div class="info-tile-value">@(dossier.Filiere2 ?? "—")</div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="info-tile">
+                            <div class="info-tile-label">Choix 3</div>
+                            <div class="info-tile-value">@(dossier.Filiere3 ?? "—")</div>
+                        </div>
+                    </div>
+                </div>
+
+                @if (dossier.AUneFiliereAffectee)
+                {
+                    <div class="col-12">
+                        <div class="info-tile info-tile-success">
+                            <div class="info-tile-label">
+                                <i class="bi bi-check-circle-fill text-success me-1"></i>
+                                Filière affectée
+                            </div>
+                            <div class="info-tile-value fw-bold text-success">
+                                @dossier.FiliereAffecteeNom
+                            </div>
+                        </div>
+                    </div>
+                }
+
+         
+            </section>
+
+            <section class="actions-card">
+                <h3 class="h6 fw-bold mb-3">
+                    <i class="bi bi-lightning-charge me-2 text-primary"></i>Actions
+                </h3>
+
+                @if (dossier.StatutActuel == InscriptionEtudiant.Models.StatutDossier.EnAttente)
+                {
+                    <p class="mb-0 text-muted">
+                        <i class="bi bi-hourglass-split me-1"></i>
+                        Votre dossier est en cours d'étude.
+                    </p>
+                }
+                else if (dossier.PeutModifier)
+                {
+                    <p class="text-muted mb-3">Des modifications sont demandées sur votre dossier.</p>
+                    <a class="btn btn-primary" asp-controller="Inscription" asp-action="Index">
+                        <i class="bi bi-pencil-square me-1"></i> Modifier mon dossier
+                    </a>
+                }
+              
+                else if (dossier.StatutActuel == InscriptionEtudiant.Models.StatutDossier.Refuse)
+                {
+                    <p class="mb-0 text-danger fw-semibold">
+                        <i class="bi bi-x-circle me-1"></i>
+                        Votre candidature n'a pas été retenue.
+                    </p>
+                }
+               
+            </section>
+        </div>
+
+        <div class="col-lg-6">
+            <section class="dashboard-card">
+                <h3 class="h5 fw-bold mb-4">
+                    <i class="bi bi-clock-history me-2 text-primary"></i>Historique des statuts
+                </h3>
+
+                @if (Model.Historique.Count == 0)
+                {
+                    <div class="empty-state py-4">
+                        <i class="bi bi-inbox d-block"></i>
+                        <p class="mb-0">Aucun changement de statut enregistré.</p>
+                    </div>
+                }
+                else
+                {
+                    <ul class="timeline">
+                        @foreach (var item in Model.Historique)
+                        {
+                            <li class="timeline-item">
+                                <span class="timeline-icon">
+                                    <i class="bi bi-arrow-repeat"></i>
+                                </span>
+                                <div class="timeline-card">
+                                    <div class="timeline-date mb-2">
+                                        <i class="bi bi-calendar3 me-1"></i>
+                                        @item.Date.ToString("dd/MM/yyyy à HH:mm")
+                                    </div>
+
+                                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                                        @if (!string.IsNullOrWhiteSpace(item.AncienStatut))
+                                        {
+                                            <span class="timeline-statut @item.AncienStatutBadgeClass">@item.AncienStatutLibelle</span>
+                                            <i class="bi bi-arrow-down text-muted"></i>
+                                        }
+                                        <span class="timeline-statut @item.NouveauStatutBadgeClass">@item.NouveauStatutLibelle</span>
+                                    </div>
+
+                                    @if (!string.IsNullOrWhiteSpace(item.Commentaire))
+                                    {
+                                        <p class="mb-2 small text-muted">
+                                            <i class="bi bi-chat-left-text me-1"></i>@item.Commentaire
+                                        </p>
+                                    }
+
+                                    @if (!string.IsNullOrWhiteSpace(item.Administrateur))
+                                    {
+                                        <div class="small text-muted">
+                                            <i class="bi bi-person-badge me-1"></i>@item.Administrateur
+                                        </div>
+                                    }
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                }
+            </section>
+        </div>
+    </div>
+}
